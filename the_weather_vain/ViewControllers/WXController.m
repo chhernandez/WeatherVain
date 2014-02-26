@@ -9,7 +9,6 @@
 #import "WXController.h"
 #import <LBBlurredImage/UIImageView+LBBlurredImage.h>
 #import "WXManager.h"
-
 @interface WXController ()
 @property (nonatomic, strong) UIImageView *backgroundImageView;
 @property (nonatomic, strong) UIImageView *blurredImageView;
@@ -45,9 +44,6 @@
 {
     
     [super viewDidLoad];
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    testObject[@"foo"] = @"bar";
-    [testObject saveInBackground];
 	//  loading the view.
     
     //1
