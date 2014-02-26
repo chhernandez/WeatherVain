@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "WXController.h"
 #import <TSMessage.h>
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
@@ -18,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [Parse setApplicationId:@"2u19gzNOrLZzNpjjGbxsrm0N7Zi2vc0GjmcjMz0F"
+                  clientKey:@"MUw1snf6QWujtUYz6Ih0ndSo4RYZzSLn5GfNpd97"];
+    
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     //1
