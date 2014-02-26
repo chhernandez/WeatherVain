@@ -107,7 +107,7 @@
                     <navigationItem key="navigationItem" title="Closet" id="ZYW-MI-1gt"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="objectsPerPage">
-                            <integer key="value" value="5"/>
+                            <integer key="value" value="8"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </tableViewController>
