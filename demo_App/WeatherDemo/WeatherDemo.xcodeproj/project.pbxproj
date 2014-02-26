@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B27657B18ADBC91005A1474 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B27657A18ADBC91005A1474 /* Parse.framework */; };
 		4B27658518ADBD4C005A1474 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B27657C18ADBD4C005A1474 /* AudioToolbox.framework */; };
 		4B27658618ADBD4C005A1474 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B27657D18ADBD4C005A1474 /* CFNetwork.framework */; };
 		4B27658718ADBD4C005A1474 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B27657E18ADBD4C005A1474 /* CoreLocation.framework */; };
@@ -34,6 +33,8 @@
 		4B72586918A46BC500941F1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B72586718A46BC500941F1F /* InfoPlist.strings */; };
 		4B72586B18A46BC500941F1F /* WeatherDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B72586A18A46BC500941F1F /* WeatherDemoTests.m */; };
 		4BB64D8918B1B9D500F54E14 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB64D8818B1B9D500F54E14 /* placeholder.png */; };
+		60047AB218BE6DA60083B3FE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60047AB118BE6DA60083B3FE /* Parse.framework */; };
+		60047AB318BE6DA60083B3FE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60047AB118BE6DA60083B3FE /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B27657A18ADBC91005A1474 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../Downloads/Parse.framework; sourceTree = "<group>"; };
 		4B27657C18ADBD4C005A1474 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4B27657D18ADBD4C005A1474 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4B27657E18ADBD4C005A1474 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -81,6 +81,7 @@
 		4B72586818A46BC500941F1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4B72586A18A46BC500941F1F /* WeatherDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherDemoTests.m; sourceTree = "<group>"; };
 		4BB64D8818B1B9D500F54E14 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		60047AB118BE6DA60083B3FE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,12 +95,12 @@
 				4B27658818ADBD4C005A1474 /* libz.dylib in Frameworks */,
 				4B27658918ADBD4C005A1474 /* MobileCoreServices.framework in Frameworks */,
 				4B27658A18ADBD4C005A1474 /* QuartzCore.framework in Frameworks */,
+				60047AB218BE6DA60083B3FE /* Parse.framework in Frameworks */,
 				4B27658B18ADBD4C005A1474 /* Security.framework in Frameworks */,
 				4B27658C18ADBD4C005A1474 /* StoreKit.framework in Frameworks */,
 				4B27658D18ADBD4C005A1474 /* SystemConfiguration.framework in Frameworks */,
 				4B72584218A46BC400941F1F /* CoreGraphics.framework in Frameworks */,
 				4B72584418A46BC500941F1F /* UIKit.framework in Frameworks */,
-				4B27657B18ADBC91005A1474 /* Parse.framework in Frameworks */,
 				4B72584018A46BC400941F1F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +111,7 @@
 			files = (
 				4B72585F18A46BC500941F1F /* XCTest.framework in Frameworks */,
 				4B72586118A46BC500941F1F /* UIKit.framework in Frameworks */,
+				60047AB318BE6DA60083B3FE /* Parse.framework in Frameworks */,
 				4B72586018A46BC500941F1F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +141,7 @@
 		4B72583E18A46BC400941F1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60047AB118BE6DA60083B3FE /* Parse.framework */,
 				4B27657C18ADBD4C005A1474 /* AudioToolbox.framework */,
 				4B27657D18ADBD4C005A1474 /* CFNetwork.framework */,
 				4B27657E18ADBD4C005A1474 /* CoreLocation.framework */,
@@ -148,7 +151,6 @@
 				4B27658218ADBD4C005A1474 /* Security.framework */,
 				4B27658318ADBD4C005A1474 /* StoreKit.framework */,
 				4B27658418ADBD4C005A1474 /* SystemConfiguration.framework */,
-				4B27657A18ADBC91005A1474 /* Parse.framework */,
 				4B72583F18A46BC400941F1F /* Foundation.framework */,
 				4B72584118A46BC400941F1F /* CoreGraphics.framework */,
 				4B72584318A46BC400941F1F /* UIKit.framework */,
@@ -438,6 +440,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/mirea/Downloads,
+					/Users/itsadmin/Desktop/WeatherDemo,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeatherDemo/WeatherDemo-Prefix.pch";
@@ -455,6 +458,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/mirea/Downloads,
+					/Users/itsadmin/Desktop/WeatherDemo,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeatherDemo/WeatherDemo-Prefix.pch";
@@ -473,6 +477,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/itsadmin/Desktop/WeatherDemo,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeatherDemo/WeatherDemo-Prefix.pch";
@@ -496,6 +501,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/itsadmin/Desktop/WeatherDemo,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeatherDemo/WeatherDemo-Prefix.pch";
