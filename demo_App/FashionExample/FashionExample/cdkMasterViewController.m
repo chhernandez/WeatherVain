@@ -46,7 +46,7 @@
         self.paginationEnabled = YES;
         
         // The number of objects to show per page
-        self.objectsPerPage = 25;
+        self.objectsPerPage = 5;
     }
     return self;
 }
@@ -56,9 +56,11 @@
 {
     
     
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+ //This is to test connection to parse.com
+ /*   PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
     testObject[@"foo"] = @"bar";
     [testObject saveInBackground];
+   */
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -73,7 +75,7 @@
 // Override to customize what kind of query to perform on the class. The default is to query for
 // all objects ordered by createdAt descending.
 - (PFQuery *)queryForTable {
-    PFQuery *query = [PFQuery queryWithClassName:@"Fashion"];
+    PFQuery *query = [PFQuery queryWithClassName:@"Closet"];
     
     // If Pull To Refresh is enabled, query against the network by default.
     if (self.pullToRefreshEnabled) {
