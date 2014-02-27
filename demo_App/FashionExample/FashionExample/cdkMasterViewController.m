@@ -88,6 +88,8 @@
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
     }
     
+    // where clause
+    [query whereKey:@"TypeID" equalTo:@2];
     //  [query orderByDescending:@"createdAt"];
     [query orderByDescending:@"Rating"];
     
