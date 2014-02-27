@@ -37,6 +37,12 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        _hourlyFormatter = [[NSDateFormatter alloc] init];
+        _hourlyFormatter.dateFormat = @"h a";
+        
+        _dailyFormatter = [[NSDateFormatter alloc] init];
+        _dailyFormatter.dateFormat = @"EEEE";
+
     }
     return self;
 }
@@ -87,8 +93,11 @@
     CGFloat temperatureHeight = 110;
     CGFloat hiloHeight = 40;
     CGFloat iconHeight = 30;
+    
+    
     //4
-    CGRect hiloFrame = CGRectMake(inset, headerFrame.size.height - hiloHeight, headerFrame.size.width -(2 * inset), hiloHeight);
+    CGRect hiloFrame = CGRectMake(inset, headerFrame.size.height - hiloHeight , headerFrame.size.width -(2 * inset), hiloHeight);
+    
     
     CGRect temperatureFrame = CGRectMake(inset, headerFrame.size.height - (temperatureHeight + hiloHeight), headerFrame.size.width - (2 *inset), temperatureHeight);
     
@@ -123,6 +132,12 @@
     hiloLabel.text = @"0° / 0°";
     hiloLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:28];
     [header addSubview:hiloLabel];
+    
+    //Bottom
+    
+//    UIButton *detailButton = [UIButton alloc] initWithFrame:<#(CGRect)#>
+    
+    
     
     // top
     UILabel *cityLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, 30)];

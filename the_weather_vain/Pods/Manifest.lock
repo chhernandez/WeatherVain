@@ -1,32 +1,38 @@
 PODS:
+  - Facebook-iOS-SDK (3.12.0)
   - HexColors (2.2.1)
   - LBBlurredImage (0.2.0)
   - Mantle (1.3.1):
     - Mantle/extobjc
   - Mantle/extobjc (1.3.1)
-  - ProgressHUD (0.0.1)
-  - ReactiveCocoa (2.2.3):
+  - Parse (1.2.18):
+    - Facebook-iOS-SDK (~> 3.11)
+  - ProgressHUD (1.1)
+  - ReactiveCocoa (2.2.4):
     - ReactiveCocoa/Core
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/Core (2.2.3):
+  - ReactiveCocoa/Core (2.2.4):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.2.3)
-  - TSMessages (0.9.4):
+  - ReactiveCocoa/no-arc (2.2.4)
+  - TSMessages (0.9.5):
     - HexColors
 
 DEPENDENCIES:
   - LBBlurredImage
   - Mantle
+  - Parse
   - ProgressHUD
   - ReactiveCocoa
   - TSMessages
 
 SPEC CHECKSUMS:
+  Facebook-iOS-SDK: c09f7d80db5c48170ff834bc03ebe774c49d1f5b
   HexColors: 3a68db077cd6572a8f7d4aa1add284dd2436a934
   LBBlurredImage: 26bacd10063a6e886de6a374f4727c3cefb22fc2
   Mantle: abc3b0c81bc66eb624cf9cebb8640e377d5a44ae
-  ProgressHUD: f09230ed14bb5748367f458e6f90e7c1f67e6c8f
-  ReactiveCocoa: b3cb6ebd50f1a0f2e39c6fd7ce3c428b6efcb22b
-  TSMessages: 5ab92604b02e49a755d2cc2baf114d2248a90977
+  Parse: 6dd57f2af9f89dc6facc755cec4e96f8b739b1fb
+  ProgressHUD: 9b41c9416b3ba4f9c5661afe9efa7938198ba810
+  ReactiveCocoa: 953a45dda30674fe704d1d9c77cc874141742f47
+  TSMessages: ef34a0acfedb5acbcc60454824d756a0da0471c4
 
 COCOAPODS: 0.29.0

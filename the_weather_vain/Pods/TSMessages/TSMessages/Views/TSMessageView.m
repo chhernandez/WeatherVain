@@ -19,6 +19,9 @@
 
 static NSMutableDictionary *_notificationDesign;
 
+@interface TSMessage (TSMessageView)
+- (void)fadeOutNotification:(TSMessageView *)currentView; // private method of TSMessage, but called by TSMessageView in -[fadeMeOut]
+@end
 
 @interface TSMessageView () <UIGestureRecognizerDelegate>
 
@@ -83,7 +86,8 @@ static NSMutableDictionary *_notificationDesign;
 }
 
 - (id)initWithTitle:(NSString *)title
-            subtitle:(NSString *)subtitle
+           subtitle:(NSString *)subtitle
+              image:(UIImage *)image
                type:(TSMessageNotificationType)notificationType
            duration:(CGFloat)duration
    inViewController:(UIViewController *)viewController
@@ -138,8 +142,8 @@ static NSMutableDictionary *_notificationDesign;
         
         current = [notificationDesign valueForKey:currentString];
 
-        UIImage *image;
-        if ([current valueForKey:@"imageName"])
+        
+        if (!image && [current valueForKey:@"imageName"])
         {
             image = [UIImage imageNamed:[current valueForKey:@"imageName"]];
         }
@@ -321,11 +325,11 @@ static NSMutableDictionary *_notificationDesign;
             UITapGestureRecognizer *tapRec = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                                      action:@selector(fadeMeOut)];
             [self addGestureRecognizer:tapRec];
-
-            UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-            tapGesture.delegate = self;
-            [self addGestureRecognizer:tapGesture];
         }
+        
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+        tapGesture.delegate = self;
+        [self addGestureRecognizer:tapGesture];
     }
     return self;
 }
@@ -412,7 +416,19 @@ static NSMutableDictionary *_notificationDesign;
     {
         if (self.messagePosition == TSMessageNotificationPositionTop)
         {
-            backgroundFrame = UIEdgeInsetsInsetRect(backgroundFrame, UIEdgeInsetsMake(-30.f, 0.f, 0.f, 0.f));
+            float topOffset = 0.f;
+
+            UINavigationController *navigationController = self.viewController.navigationController;
+            if (!navigationController && [self.viewController isKindOfClass:[UINavigationController class]]) {
+                navigationController = (UINavigationController *)self.viewController;
+            }
+            BOOL isNavBarIsHidden = !navigationController || self.viewController.navigationController.navigationBarHidden;
+            BOOL isNavBarIsOpaque = !self.viewController.navigationController.navigationBar.isTranslucent && self.viewController.navigationController.navigationBar.alpha == 1;
+            
+            if (isNavBarIsHidden || isNavBarIsOpaque) {
+                topOffset = -30.f;
+            }
+            backgroundFrame = UIEdgeInsetsInsetRect(backgroundFrame, UIEdgeInsetsMake(topOffset, 0.f, 0.f, 0.f));
         }
         else if (self.messagePosition == TSMessageNotificationPositionBottom)
         {
@@ -437,6 +453,13 @@ static NSMutableDictionary *_notificationDesign;
     [[TSMessage sharedMessage] performSelectorOnMainThread:@selector(fadeOutNotification:) withObject:self waitUntilDone:NO];
 }
 
+- (void)didMoveToWindow {
+    [super didMoveToWindow];
+    if (self.duration == TSMessageNotificationDurationEndless && self.superview && !self.window ) {
+        // view controller was dismissed, let's fade out
+        [self fadeMeOut];
+    }
+}
 #pragma mark - Target/Action
 
 - (void)buttonTapped:(id) sender
@@ -457,8 +480,6 @@ static NSMutableDictionary *_notificationDesign;
         {
             self.callback();
         }
-
-        [self fadeMeOut];
     }
 }
 

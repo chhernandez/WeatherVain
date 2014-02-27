@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-Facebook-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-HexColors.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -15,6 +20,11 @@
 			<false/>
 		</dict>
 		<key>Pods-Mantle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,37 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0C48D2C6AC6C4253ABBCB701</key>
+		<key>0CFEFFEB1A9041E8BBE5BC45</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>86FA90C082034A6D8DC53B10</key>
+		<key>45F8B3092CE94CE7B5D121DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9CD728D81D23473B926DFF83</key>
+		<key>7C01E120B4984D778D050BE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A83CD6BFD05C4618B012FFF8</key>
+		<key>90C0F435A1CB48CAA88424F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AE715D38B4CD47F58366C155</key>
+		<key>A9DBEED562A94F988B95919A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CE9FF46B779A40529B0D5A3E</key>
+		<key>BAA673E6CF504438928D7CC0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E9AA9CF0CDD64F97BB41217F</key>
+		<key>BCA2F630F92A41918BAF12E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6651A2F77A0406987E83191</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8AA232BA3044F72B87E6FE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
