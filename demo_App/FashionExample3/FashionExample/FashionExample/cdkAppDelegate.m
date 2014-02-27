@@ -7,6 +7,7 @@
 //
 
 #import "cdkAppDelegate.h"
+#import "cdkDefaultSettingsViewController.h"
 #import <Parse/Parse.h>
 
 @implementation cdkAppDelegate
@@ -33,6 +34,10 @@
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
      UIRemoteNotificationTypeAlert|
      UIRemoteNotificationTypeSound];
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[cdkDefaultSettingsViewController alloc] init]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
     
     // Override point for customization after application launch.

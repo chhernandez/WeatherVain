@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface cdkDefaultSettingsViewController : UIViewController
+@interface cdkDefaultSettingsViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+
+@property (nonatomic, strong) IBOutlet UILabel *welcomeLabel;
+
+- (IBAction)logOutButtonTapAction:(id)sender;
+
 
 @end
