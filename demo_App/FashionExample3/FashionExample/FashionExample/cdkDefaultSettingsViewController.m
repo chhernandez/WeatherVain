@@ -24,6 +24,8 @@
     } else {
         self.welcomeLabel.text = NSLocalizedString(@"Not logged in", nil);
     }
+    NSLog(@"my username: %@", [PFUser currentUser]);
+ //   NSlog(@"my passsord: %@", [PFUser currentPassword]);
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -120,9 +122,12 @@
 #pragma mark - ()
 
 - (IBAction)logOutButtonTapAction:(id)sender {
+    
+    NSLog(@"In the logout function...");
     [PFUser logOut];
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 
 
 /*

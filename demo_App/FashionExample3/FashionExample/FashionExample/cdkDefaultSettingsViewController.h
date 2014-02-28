@@ -11,9 +11,12 @@
 
 @interface cdkDefaultSettingsViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 
-@property (nonatomic, strong) IBOutlet UILabel *welcomeLabel;
+//@property (nonatomic, strong) IBOutlet UILabel *welcomeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
 
 - (IBAction)logOutButtonTapAction:(id)sender;
+
+//- (IBAction)logOutButtonTapAction:(id)sender;
 
 
 @end
