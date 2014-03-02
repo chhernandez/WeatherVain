@@ -31,8 +31,8 @@
 		4BB64D9A18B1BD3100F54E14 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB64D9118B1BD3100F54E14 /* Security.framework */; };
 		4BB64D9B18B1BD3100F54E14 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB64D9218B1BD3100F54E14 /* StoreKit.framework */; };
 		4BB64D9C18B1BD3100F54E14 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB64D9318B1BD3100F54E14 /* SystemConfiguration.framework */; };
-		60047AAF18BE6B520083B3FE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60047AAE18BE6B520083B3FE /* Parse.framework */; };
-		60047AB018BE6B520083B3FE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60047AAE18BE6B520083B3FE /* Parse.framework */; };
+		4BCDA4B118C2D4E300DF71A4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCDA4B018C2D4E300DF71A4 /* Parse.framework */; };
+		4BCDA4B618C2D84A00DF71A4 /* cdkWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDA4B518C2D84A00DF71A4 /* cdkWeatherViewController.m */; };
 		605936DB18C15088007E7627 /* cdkMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605936DA18C15087007E7627 /* cdkMainViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +77,9 @@
 		4BB64D9118B1BD3100F54E14 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4BB64D9218B1BD3100F54E14 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4BB64D9318B1BD3100F54E14 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		60047AAE18BE6B520083B3FE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		4BCDA4B018C2D4E300DF71A4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../../Desktop/Parse.framework; sourceTree = "<group>"; };
+		4BCDA4B418C2D84A00DF71A4 /* cdkWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkWeatherViewController.h; sourceTree = "<group>"; };
+		4BCDA4B518C2D84A00DF71A4 /* cdkWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkWeatherViewController.m; sourceTree = "<group>"; };
 		605936D918C15087007E7627 /* cdkMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkMainViewController.h; sourceTree = "<group>"; };
 		605936DA18C15087007E7627 /* cdkMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +95,7 @@
 				4BB64D9718B1BD3100F54E14 /* libz.dylib in Frameworks */,
 				4BB64D9818B1BD3100F54E14 /* MobileCoreServices.framework in Frameworks */,
 				4BB64D9918B1BD3100F54E14 /* QuartzCore.framework in Frameworks */,
-				60047AAF18BE6B520083B3FE /* Parse.framework in Frameworks */,
+				4BCDA4B118C2D4E300DF71A4 /* Parse.framework in Frameworks */,
 				4BB64D9A18B1BD3100F54E14 /* Security.framework in Frameworks */,
 				4BB64D9B18B1BD3100F54E14 /* StoreKit.framework in Frameworks */,
 				4BB64D9C18B1BD3100F54E14 /* SystemConfiguration.framework in Frameworks */,
@@ -109,7 +111,6 @@
 			files = (
 				4BB64D7118B1B83300F54E14 /* XCTest.framework in Frameworks */,
 				4BB64D7318B1B83300F54E14 /* UIKit.framework in Frameworks */,
-				60047AB018BE6B520083B3FE /* Parse.framework in Frameworks */,
 				4BB64D7218B1B83300F54E14 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +140,7 @@
 		4BB64D4D18B1B83300F54E14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				60047AAE18BE6B520083B3FE /* Parse.framework */,
+				4BCDA4B018C2D4E300DF71A4 /* Parse.framework */,
 				4BB64D8B18B1BD3100F54E14 /* AudioToolbox.framework */,
 				4BB64D8C18B1BD3100F54E14 /* CFNetwork.framework */,
 				4BB64D8D18B1BD3100F54E14 /* CoreLocation.framework */,
@@ -171,6 +172,8 @@
 				4BB64D5518B1B83300F54E14 /* Supporting Files */,
 				605936D918C15087007E7627 /* cdkMainViewController.h */,
 				605936DA18C15087007E7627 /* cdkMainViewController.m */,
+				4BCDA4B418C2D84A00DF71A4 /* cdkWeatherViewController.h */,
+				4BCDA4B518C2D84A00DF71A4 /* cdkWeatherViewController.m */,
 			);
 			path = FashionExample;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCDA4B618C2D84A00DF71A4 /* cdkWeatherViewController.m in Sources */,
 				4BB64D6818B1B83300F54E14 /* cdkDetailViewController.m in Sources */,
 				605936DB18C15088007E7627 /* cdkMainViewController.m in Sources */,
 				4BB64D5B18B1B83300F54E14 /* main.m in Sources */,
@@ -438,6 +442,7 @@
 					/Users/mirea/Downloads,
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					/Users/itsadmin/Desktop/FashionExample,
+					/Users/mirea/Desktop,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FashionExample/FashionExample-Prefix.pch";
@@ -457,6 +462,7 @@
 					/Users/mirea/Downloads,
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					/Users/itsadmin/Desktop/FashionExample,
+					/Users/mirea/Desktop,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FashionExample/FashionExample-Prefix.pch";
