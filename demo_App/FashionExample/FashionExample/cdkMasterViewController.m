@@ -87,6 +87,10 @@
     if (self.objects.count == 0) {
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
     }
+    // ********************
+    // here's how you set the where to in queries
+    // [query whereKey:@"TypeID" equalTo:@1];
+    
     
     //  [query orderByDescending:@"createdAt"];
     [query orderByDescending:@"Rating"];
