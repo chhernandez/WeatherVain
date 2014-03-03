@@ -35,6 +35,12 @@
 		4BCDA4B618C2D84A00DF71A4 /* cdkWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDA4B518C2D84A00DF71A4 /* cdkWeatherViewController.m */; };
 		4BF4DF0B18C3ABC3003B2B01 /* cdkClosetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4DF0A18C3ABC3003B2B01 /* cdkClosetViewController.m */; };
 		4BF4DF0E18C3ACA0003B2B01 /* cdkCellType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4DF0D18C3ACA0003B2B01 /* cdkCellType.m */; };
+		4BF4DF1518C40245003B2B01 /* accessories.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4DF0F18C40245003B2B01 /* accessories.jpg */; };
+		4BF4DF1618C40245003B2B01 /* bottoms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4DF1018C40245003B2B01 /* bottoms.jpg */; };
+		4BF4DF1718C40245003B2B01 /* dress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4DF1118C40245003B2B01 /* dress.jpg */; };
+		4BF4DF1818C40245003B2B01 /* outerwear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4DF1218C40245003B2B01 /* outerwear.jpg */; };
+		4BF4DF1918C40245003B2B01 /* shoes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4DF1318C40245003B2B01 /* shoes.jpg */; };
+		4BF4DF1A18C40245003B2B01 /* tops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4DF1418C40245003B2B01 /* tops.jpg */; };
 		605936DB18C15088007E7627 /* cdkMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605936DA18C15087007E7627 /* cdkMainViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +92,12 @@
 		4BF4DF0A18C3ABC3003B2B01 /* cdkClosetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkClosetViewController.m; sourceTree = "<group>"; };
 		4BF4DF0C18C3ACA0003B2B01 /* cdkCellType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkCellType.h; sourceTree = "<group>"; };
 		4BF4DF0D18C3ACA0003B2B01 /* cdkCellType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkCellType.m; sourceTree = "<group>"; };
+		4BF4DF0F18C40245003B2B01 /* accessories.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = accessories.jpg; path = ../../../../../../Desktop/WeatherVainCloset/accessories.jpg; sourceTree = "<group>"; };
+		4BF4DF1018C40245003B2B01 /* bottoms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bottoms.jpg; path = ../../../../../../Desktop/WeatherVainCloset/bottoms.jpg; sourceTree = "<group>"; };
+		4BF4DF1118C40245003B2B01 /* dress.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress.jpg; path = ../../../../../../Desktop/WeatherVainCloset/dress.jpg; sourceTree = "<group>"; };
+		4BF4DF1218C40245003B2B01 /* outerwear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = outerwear.jpg; path = ../../../../../../Desktop/WeatherVainCloset/outerwear.jpg; sourceTree = "<group>"; };
+		4BF4DF1318C40245003B2B01 /* shoes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shoes.jpg; path = ../../../../../../Desktop/WeatherVainCloset/shoes.jpg; sourceTree = "<group>"; };
+		4BF4DF1418C40245003B2B01 /* tops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tops.jpg; path = ../../../../../../Desktop/WeatherVainCloset/tops.jpg; sourceTree = "<group>"; };
 		605936D918C15087007E7627 /* cdkMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkMainViewController.h; sourceTree = "<group>"; };
 		605936DA18C15087007E7627 /* cdkMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +179,12 @@
 		4BB64D5418B1B83300F54E14 /* FashionExample */ = {
 			isa = PBXGroup;
 			children = (
+				4BF4DF0F18C40245003B2B01 /* accessories.jpg */,
+				4BF4DF1018C40245003B2B01 /* bottoms.jpg */,
+				4BF4DF1118C40245003B2B01 /* dress.jpg */,
+				4BF4DF1218C40245003B2B01 /* outerwear.jpg */,
+				4BF4DF1318C40245003B2B01 /* shoes.jpg */,
+				4BF4DF1418C40245003B2B01 /* tops.jpg */,
 				4BB64D5D18B1B83300F54E14 /* cdkAppDelegate.h */,
 				4BB64D5E18B1B83300F54E14 /* cdkAppDelegate.m */,
 				4BB64D6018B1B83300F54E14 /* Main.storyboard */,
@@ -294,8 +312,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF4DF1818C40245003B2B01 /* outerwear.jpg in Resources */,
 				4BB64D6A18B1B83300F54E14 /* Images.xcassets in Resources */,
+				4BF4DF1918C40245003B2B01 /* shoes.jpg in Resources */,
+				4BF4DF1718C40245003B2B01 /* dress.jpg in Resources */,
+				4BF4DF1A18C40245003B2B01 /* tops.jpg in Resources */,
 				4BB64D5918B1B83300F54E14 /* InfoPlist.strings in Resources */,
+				4BF4DF1618C40245003B2B01 /* bottoms.jpg in Resources */,
+				4BF4DF1518C40245003B2B01 /* accessories.jpg in Resources */,
 				4BB64D6218B1B83300F54E14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

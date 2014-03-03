@@ -11,5 +11,6 @@
 @interface cdkClosetViewController : UICollectionViewController
 
 @property (strong, nonatomic) NSArray *typeArray;
+@property (strong, nonatomic) NSArray *typeImages;
 
 @end

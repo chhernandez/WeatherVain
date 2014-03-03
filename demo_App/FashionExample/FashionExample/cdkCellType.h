@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *myNewLabel;
 
+@property (weak, nonatomic) IBOutlet UIImageView *myNewImage;
 
 @end

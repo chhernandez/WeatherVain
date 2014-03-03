@@ -35,6 +35,10 @@
     
     aCell.myNewLabel.text = self.typeArray[indexPath.row];
     
+    UIImage *typeImage = [[UIImage alloc] init];
+    typeImage = [UIImage imageNamed:[self.typeImages objectAtIndex:indexPath.row]];
+    aCell.myNewImage.image = typeImage;
+    
  //   aCell.myNewLabel.text = [NSString stringWithFormat:@"Rating: "];
 
     //aCell.myTypeLabel.text = self.typeArray[indexPath.row];
@@ -60,6 +64,7 @@
 	// Do any additional setup after loading the view.
     
     self.typeArray = @[@"Tops", @"Outerwear", @"Bottoms", @"Accessories", @"Shoes", @"One Piece"];
+    self.typeImages = @[@"tops.jpg", @"outerwear.jpg", @"Bottoms.jpg", @"accessories.jpg", @"shoes.jpg", @"dress.jpg"];
 }
 
 - (void)didReceiveMemoryWarning
