@@ -8,6 +8,7 @@
 
 #import "cdkClosetViewController.h"
 #import "cdkCellType.h"
+#import "cdkMasterViewController.h"
 
 @interface cdkClosetViewController ()
 
@@ -65,6 +66,17 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Prepare for Segue
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    UICollectionViewCell *cell = (UICollectionViewCell *)sender;
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+    
+    cdkMasterViewController *myListViewController = (cdkMasterViewController *)segue.destinationViewController;
+    myListViewController.TypeList = [self.typeArray objectAtIndex:indexPath.row];
+    
 }
 
 @end

@@ -65,6 +65,14 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
   
+    
+    self.myItemsTitle.title = self.TypeList;
+    
+    NSLog(@"my type list: %@", self.TypeList);
+    if (self.TypeList == nil) {
+        self.myItemsTitle.title = @"All Items";
+    }
+    
     /*
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
@@ -86,6 +94,30 @@
     // and then subsequently do a query against the network.
     if (self.objects.count == 0) {
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
+    }
+    
+    
+    if (([self.TypeList  isEqual: @"Tops"])) {
+          NSLog(@"my type list: %@", self.TypeList);
+        [query whereKey:@"TypeID" equalTo:@1];
+    } else if (([self.TypeList  isEqual: @"Bottoms"])) {
+        NSLog(@"my type list: %@", self.TypeList);
+        [query whereKey:@"TypeID" equalTo:@2];
+    } else if (([self.TypeList  isEqual: @"Shoes"])) {
+        NSLog(@"my type list: %@", self.TypeList);
+        [query whereKey:@"TypeID" equalTo:@3];
+    } else if (([self.TypeList  isEqual: @"Outerwear"])) {
+        NSLog(@"my type list: %@", self.TypeList);
+        [query whereKey:@"TypeID" equalTo:@4];
+    } else if (([self.TypeList  isEqual: @"Accessories"])) {
+        NSLog(@"my type list: %@", self.TypeList);
+        [query whereKey:@"TypeID" equalTo:@5];
+    } else if (([self.TypeList  isEqual: @"One Piece"])) {
+        NSLog(@"my type list: %@", self.TypeList);
+        [query whereKey:@"TypeID" equalTo:@6];
+    } else {
+        
+       // show all items
     }
     // ********************
     // here's how you set the where to in queries

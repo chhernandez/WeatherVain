@@ -162,6 +162,7 @@
                                 <size key="customSize" width="141" height="131"/>
                                 <connections>
                                     <outlet property="myNewLabel" destination="PKT-h4-67N" id="FaV-iO-Sbk"/>
+                                    <segue destination="pGg-6v-bdr" kind="push" id="k16-bm-S6E"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -220,16 +221,19 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Closet" id="tQt-TN-PWz"/>
+                    <navigationItem key="navigationItem" title="Title" id="qv5-Yo-k6y"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="objectsPerPage">
                             <integer key="value" value="8"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="myItemsTitle" destination="qv5-Yo-k6y" id="Org-xG-aue"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="699" y="64"/>
+            <point key="canvasLocation" x="750" y="64"/>
         </scene>
         <!--Cdk Detail View Controller - Detail-->
         <scene sceneID="Cn3-H9-jdl">
@@ -273,4 +277,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="k16-bm-S6E"/>
+    </inferredMetricsTieBreakers>
 </document>

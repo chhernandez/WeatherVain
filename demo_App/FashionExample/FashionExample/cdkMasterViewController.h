@@ -12,4 +12,7 @@
 
 @interface cdkMasterViewController : PFQueryTableViewController
 
+@property (weak, nonatomic) IBOutlet UINavigationItem *myItemsTitle;
+@property (strong, nonatomic) NSString *TypeList;
+
 @end
