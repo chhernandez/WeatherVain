@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B49C0DC18C63E29009F92F2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B49C0DB18C63E29009F92F2 /* Parse.framework */; };
+		4B49C0E318C63E83009F92F2 /* accessories.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B49C0DD18C63E83009F92F2 /* accessories.jpg */; };
+		4B49C0E418C63E83009F92F2 /* bottoms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B49C0DE18C63E83009F92F2 /* bottoms.jpg */; };
+		4B49C0E518C63E83009F92F2 /* dress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B49C0DF18C63E83009F92F2 /* dress.jpg */; };
+		4B49C0E618C63E83009F92F2 /* outerwear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B49C0E018C63E83009F92F2 /* outerwear.jpg */; };
+		4B49C0E718C63E83009F92F2 /* shoes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B49C0E118C63E83009F92F2 /* shoes.jpg */; };
+		4B49C0E818C63E83009F92F2 /* tops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B49C0E218C63E83009F92F2 /* tops.jpg */; };
 		4BB64D4F18B1B83300F54E14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB64D4E18B1B83300F54E14 /* Foundation.framework */; };
 		4BB64D5118B1B83300F54E14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB64D5018B1B83300F54E14 /* CoreGraphics.framework */; };
 		4BB64D5318B1B83300F54E14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB64D5218B1B83300F54E14 /* UIKit.framework */; };
@@ -31,16 +38,9 @@
 		4BB64D9A18B1BD3100F54E14 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB64D9118B1BD3100F54E14 /* Security.framework */; };
 		4BB64D9B18B1BD3100F54E14 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB64D9218B1BD3100F54E14 /* StoreKit.framework */; };
 		4BB64D9C18B1BD3100F54E14 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB64D9318B1BD3100F54E14 /* SystemConfiguration.framework */; };
-		4BCDA4B118C2D4E300DF71A4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCDA4B018C2D4E300DF71A4 /* Parse.framework */; };
 		4BCDA4B618C2D84A00DF71A4 /* cdkWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDA4B518C2D84A00DF71A4 /* cdkWeatherViewController.m */; };
 		4BF4DF0B18C3ABC3003B2B01 /* cdkClosetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4DF0A18C3ABC3003B2B01 /* cdkClosetViewController.m */; };
 		4BF4DF0E18C3ACA0003B2B01 /* cdkCellType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4DF0D18C3ACA0003B2B01 /* cdkCellType.m */; };
-		4BF4DF1518C40245003B2B01 /* accessories.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4DF0F18C40245003B2B01 /* accessories.jpg */; };
-		4BF4DF1618C40245003B2B01 /* bottoms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4DF1018C40245003B2B01 /* bottoms.jpg */; };
-		4BF4DF1718C40245003B2B01 /* dress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4DF1118C40245003B2B01 /* dress.jpg */; };
-		4BF4DF1818C40245003B2B01 /* outerwear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4DF1218C40245003B2B01 /* outerwear.jpg */; };
-		4BF4DF1918C40245003B2B01 /* shoes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4DF1318C40245003B2B01 /* shoes.jpg */; };
-		4BF4DF1A18C40245003B2B01 /* tops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4DF1418C40245003B2B01 /* tops.jpg */; };
 		605936DB18C15088007E7627 /* cdkMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605936DA18C15087007E7627 /* cdkMainViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B49C0DB18C63E29009F92F2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = FashionExample/Parse.framework; sourceTree = "<group>"; };
+		4B49C0DD18C63E83009F92F2 /* accessories.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = accessories.jpg; path = Images.xcassets/accessories.jpg; sourceTree = "<group>"; };
+		4B49C0DE18C63E83009F92F2 /* bottoms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bottoms.jpg; path = Images.xcassets/bottoms.jpg; sourceTree = "<group>"; };
+		4B49C0DF18C63E83009F92F2 /* dress.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress.jpg; path = Images.xcassets/dress.jpg; sourceTree = "<group>"; };
+		4B49C0E018C63E83009F92F2 /* outerwear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = outerwear.jpg; path = Images.xcassets/outerwear.jpg; sourceTree = "<group>"; };
+		4B49C0E118C63E83009F92F2 /* shoes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shoes.jpg; path = Images.xcassets/shoes.jpg; sourceTree = "<group>"; };
+		4B49C0E218C63E83009F92F2 /* tops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tops.jpg; path = Images.xcassets/tops.jpg; sourceTree = "<group>"; };
 		4BB64D4B18B1B83300F54E14 /* FashionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB64D4E18B1B83300F54E14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BB64D5018B1B83300F54E14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,19 +92,12 @@
 		4BB64D9118B1BD3100F54E14 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4BB64D9218B1BD3100F54E14 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4BB64D9318B1BD3100F54E14 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		4BCDA4B018C2D4E300DF71A4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../../Desktop/Parse.framework; sourceTree = "<group>"; };
 		4BCDA4B418C2D84A00DF71A4 /* cdkWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkWeatherViewController.h; sourceTree = "<group>"; };
 		4BCDA4B518C2D84A00DF71A4 /* cdkWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkWeatherViewController.m; sourceTree = "<group>"; };
 		4BF4DF0918C3ABC3003B2B01 /* cdkClosetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkClosetViewController.h; sourceTree = "<group>"; };
 		4BF4DF0A18C3ABC3003B2B01 /* cdkClosetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkClosetViewController.m; sourceTree = "<group>"; };
 		4BF4DF0C18C3ACA0003B2B01 /* cdkCellType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkCellType.h; sourceTree = "<group>"; };
 		4BF4DF0D18C3ACA0003B2B01 /* cdkCellType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkCellType.m; sourceTree = "<group>"; };
-		4BF4DF0F18C40245003B2B01 /* accessories.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = accessories.jpg; path = ../../../../../../Desktop/WeatherVainCloset/accessories.jpg; sourceTree = "<group>"; };
-		4BF4DF1018C40245003B2B01 /* bottoms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bottoms.jpg; path = ../../../../../../Desktop/WeatherVainCloset/bottoms.jpg; sourceTree = "<group>"; };
-		4BF4DF1118C40245003B2B01 /* dress.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress.jpg; path = ../../../../../../Desktop/WeatherVainCloset/dress.jpg; sourceTree = "<group>"; };
-		4BF4DF1218C40245003B2B01 /* outerwear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = outerwear.jpg; path = ../../../../../../Desktop/WeatherVainCloset/outerwear.jpg; sourceTree = "<group>"; };
-		4BF4DF1318C40245003B2B01 /* shoes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shoes.jpg; path = ../../../../../../Desktop/WeatherVainCloset/shoes.jpg; sourceTree = "<group>"; };
-		4BF4DF1418C40245003B2B01 /* tops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tops.jpg; path = ../../../../../../Desktop/WeatherVainCloset/tops.jpg; sourceTree = "<group>"; };
 		605936D918C15087007E7627 /* cdkMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkMainViewController.h; sourceTree = "<group>"; };
 		605936DA18C15087007E7627 /* cdkMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +113,7 @@
 				4BB64D9718B1BD3100F54E14 /* libz.dylib in Frameworks */,
 				4BB64D9818B1BD3100F54E14 /* MobileCoreServices.framework in Frameworks */,
 				4BB64D9918B1BD3100F54E14 /* QuartzCore.framework in Frameworks */,
-				4BCDA4B118C2D4E300DF71A4 /* Parse.framework in Frameworks */,
+				4B49C0DC18C63E29009F92F2 /* Parse.framework in Frameworks */,
 				4BB64D9A18B1BD3100F54E14 /* Security.framework in Frameworks */,
 				4BB64D9B18B1BD3100F54E14 /* StoreKit.framework in Frameworks */,
 				4BB64D9C18B1BD3100F54E14 /* SystemConfiguration.framework in Frameworks */,
@@ -158,7 +158,7 @@
 		4BB64D4D18B1B83300F54E14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4BCDA4B018C2D4E300DF71A4 /* Parse.framework */,
+				4B49C0DB18C63E29009F92F2 /* Parse.framework */,
 				4BB64D8B18B1BD3100F54E14 /* AudioToolbox.framework */,
 				4BB64D8C18B1BD3100F54E14 /* CFNetwork.framework */,
 				4BB64D8D18B1BD3100F54E14 /* CoreLocation.framework */,
@@ -179,12 +179,12 @@
 		4BB64D5418B1B83300F54E14 /* FashionExample */ = {
 			isa = PBXGroup;
 			children = (
-				4BF4DF0F18C40245003B2B01 /* accessories.jpg */,
-				4BF4DF1018C40245003B2B01 /* bottoms.jpg */,
-				4BF4DF1118C40245003B2B01 /* dress.jpg */,
-				4BF4DF1218C40245003B2B01 /* outerwear.jpg */,
-				4BF4DF1318C40245003B2B01 /* shoes.jpg */,
-				4BF4DF1418C40245003B2B01 /* tops.jpg */,
+				4B49C0DD18C63E83009F92F2 /* accessories.jpg */,
+				4B49C0DE18C63E83009F92F2 /* bottoms.jpg */,
+				4B49C0DF18C63E83009F92F2 /* dress.jpg */,
+				4B49C0E018C63E83009F92F2 /* outerwear.jpg */,
+				4B49C0E118C63E83009F92F2 /* shoes.jpg */,
+				4B49C0E218C63E83009F92F2 /* tops.jpg */,
 				4BB64D5D18B1B83300F54E14 /* cdkAppDelegate.h */,
 				4BB64D5E18B1B83300F54E14 /* cdkAppDelegate.m */,
 				4BB64D6018B1B83300F54E14 /* Main.storyboard */,
@@ -312,14 +312,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF4DF1818C40245003B2B01 /* outerwear.jpg in Resources */,
+				4B49C0E618C63E83009F92F2 /* outerwear.jpg in Resources */,
 				4BB64D6A18B1B83300F54E14 /* Images.xcassets in Resources */,
-				4BF4DF1918C40245003B2B01 /* shoes.jpg in Resources */,
-				4BF4DF1718C40245003B2B01 /* dress.jpg in Resources */,
-				4BF4DF1A18C40245003B2B01 /* tops.jpg in Resources */,
+				4B49C0E718C63E83009F92F2 /* shoes.jpg in Resources */,
+				4B49C0E518C63E83009F92F2 /* dress.jpg in Resources */,
+				4B49C0E818C63E83009F92F2 /* tops.jpg in Resources */,
 				4BB64D5918B1B83300F54E14 /* InfoPlist.strings in Resources */,
-				4BF4DF1618C40245003B2B01 /* bottoms.jpg in Resources */,
-				4BF4DF1518C40245003B2B01 /* accessories.jpg in Resources */,
+				4B49C0E418C63E83009F92F2 /* bottoms.jpg in Resources */,
+				4B49C0E318C63E83009F92F2 /* accessories.jpg in Resources */,
 				4BB64D6218B1B83300F54E14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +479,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					/Users/itsadmin/Desktop/FashionExample,
 					/Users/mirea/Desktop,
+					/Users/mirea/Development/myxcode/WeatherVain/demo_App/FashionExample/FashionExample,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FashionExample/FashionExample-Prefix.pch";
@@ -499,6 +500,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					/Users/itsadmin/Desktop/FashionExample,
 					/Users/mirea/Desktop,
+					/Users/mirea/Development/myxcode/WeatherVain/demo_App/FashionExample/FashionExample,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FashionExample/FashionExample-Prefix.pch";
