@@ -27,7 +27,7 @@
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     UITabBarController *tabBar = (UITabBarController *)self.window.rootViewController;
-    tabBar.selectedIndex = 1;
+    tabBar.selectedIndex = 2;
     
 //    
 //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

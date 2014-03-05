@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -21,13 +21,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9CT-7V-lEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="180"/>
+            <point key="canvasLocation" x="1832" y="166"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Closet-->
         <scene sceneID="LqQ-et-mwg">
             <objects>
                 <navigationController definesPresentationContext="YES" id="CGy-1d-DRe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dzL-Wr-1ZQ"/>
+                    <tabBarItem key="tabBarItem" title="Closet" image="first" id="dzL-Wr-1ZQ"/>
                     <navigationItem key="navigationItem" id="OF8-rh-mf8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ofn-xz-2Sa">
                         <autoresizingMask key="autoresizingMask"/>
@@ -38,7 +38,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHW-Rq-MQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2203" y="174"/>
+            <point key="canvasLocation" x="1731" y="890"/>
         </scene>
         <!--Main Page View Controller - First-->
         <scene sceneID="W3I-pn-N6e">
@@ -57,12 +57,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="-1320"/>
+            <point key="canvasLocation" x="1480" y="-1324"/>
         </scene>
-        <!--View Controller Profile - Second-->
+        <!--Cdk Main View Controller - Second-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
-                <viewController title="Second" id="QUy-BD-bpt" customClass="ViewController_Profile" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
+                <viewController title="Second" id="QUy-BD-bpt" customClass="cdkMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SpL-qC-NIt"/>
                         <viewControllerLayoutGuide type="bottom" id="doU-xp-dcX"/>
@@ -78,6 +79,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zi-rW-C8C">
+                                <rect key="frame" x="56" y="60" width="220" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FQ-ZX-ua4">
+                                <rect key="frame" x="74" y="417" width="173" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutButtonTapAction:" destination="QUy-BD-bpt" eventType="touchUpInside" id="Uht-V8-PA2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -86,10 +104,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="first" id="Z7h-1E-pvt"/>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="3Zi-rW-C8C" id="Oun-FH-W7Y"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="-560"/>
+            <point key="canvasLocation" x="1664" y="-624"/>
         </scene>
         <!--View Controller Social - Social-->
         <scene sceneID="4WS-ar-c68">
@@ -117,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QJA-bB-6fg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="953"/>
+            <point key="canvasLocation" x="1524" y="1565"/>
         </scene>
         <!--View Controller - Splash Page-->
         <scene sceneID="0M5-Ta-8CI">
@@ -237,11 +257,12 @@
                             <outlet property="delegate" destination="GVr-FJ-nRY" id="j9N-WD-rMa"/>
                         </connections>
                     </collectionView>
+                    <tabBarItem key="tabBarItem" title="Closet" image="first" id="gIG-eO-fJk"/>
                     <navigationItem key="navigationItem" title="My Closet" id="aLr-Ne-9gJ"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUW-h7-a0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2646" y="180"/>
+            <point key="canvasLocation" x="2258" y="890"/>
         </scene>
         <!--Cdk Master View Controller - Master-->
         <scene sceneID="Ruk-jg-J8F">
@@ -299,7 +320,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2W0-5O-TZi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3082" y="174"/>
+            <point key="canvasLocation" x="2766" y="890"/>
         </scene>
         <!--Cdk Detail View Controller - Detail-->
         <scene sceneID="Fiy-hB-8C4">
@@ -335,7 +356,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQP-0Z-g0l" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3522" y="180"/>
+            <point key="canvasLocation" x="3318" y="890"/>
         </scene>
     </scenes>
     <resources>
