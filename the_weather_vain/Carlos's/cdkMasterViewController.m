@@ -179,12 +179,14 @@
         cell = [[PFTableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
+     NSLog(@"my object in master contains: %@", object);
+    
     // Configure the cell
     cell.textLabel.text = [object objectForKey:@"Label"];
     
-   // PFFile *thumbnail = object[@"Image"];
-   // cell.imageView.image = [UIImage imageNamed:@"placeholder.png"];
-   // cell.imageView.file = thumbnail;
+    //PFFile *thumbnail = object[@"Image"];
+    //cell.imageView.image = [UIImage imageNamed:@"placeholder.png"];
+    //cell.imageView.file = thumbnail;
     // cell.imageView.file = [object objectForKey:self.imageKey];
     
     cell.detailTextLabel.text = [NSString stringWithFormat:@"Rating: %@", [object objectForKey:@"Rating"]];
@@ -240,6 +242,11 @@
        // NSDate *object = _objects[indexPath.row];
         PFObject *object = [self.objects objectAtIndex:indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
+        
+        NSLog(@"my object in prepareForSegue contains: %@", object);
+    } else {
+        
+        NSLog(@"my object in prepareForSegue contains no objects");
     }
 }
 

@@ -79,6 +79,7 @@
 		48FDBD2A18C6FF9F0026A51E /* ViewController_Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FDBD1818C6FF9F0026A51E /* ViewController_Weather.m */; };
 		48FDBD2E18C702080026A51E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FDBD2D18C702080026A51E /* Images.xcassets */; };
 		48FDBD3018C705780026A51E /* outfit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48FDBD2F18C705780026A51E /* outfit.jpg */; };
+		6087B0C818C7C886001BFD58 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6087B0C718C7C886001BFD58 /* placeholder.png */; };
 		CA75DD1518BD247F00DE87CE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75DD0D18BD247F00DE87CE /* AudioToolbox.framework */; };
 		CA75DD1618BD247F00DE87CE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75DD0E18BD247F00DE87CE /* CFNetwork.framework */; };
 		CA75DD1718BD247F00DE87CE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75DD0F18BD247F00DE87CE /* libz.dylib */; };
@@ -195,6 +196,7 @@
 		48FDBD1818C6FF9F0026A51E /* ViewController_Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController_Weather.m; sourceTree = "<group>"; };
 		48FDBD2D18C702080026A51E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48FDBD2F18C705780026A51E /* outfit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outfit.jpg; sourceTree = "<group>"; };
+		6087B0C718C7C886001BFD58 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		CA75DD0D18BD247F00DE87CE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CA75DD0E18BD247F00DE87CE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CA75DD0F18BD247F00DE87CE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -416,6 +418,7 @@
 				48FDBD0718C6FF9F0026A51E /* cdkWeatherViewController.h */,
 				48FDBD0818C6FF9F0026A51E /* cdkWeatherViewController.m */,
 				48FDBD0918C6FF9F0026A51E /* dress.jpg */,
+				6087B0C718C7C886001BFD58 /* placeholder.png */,
 				48FDBD0A18C6FF9F0026A51E /* outerwear.jpg */,
 				48FDBD0B18C6FF9F0026A51E /* shoes.jpg */,
 				48FDBD0E18C6FF9F0026A51E /* tops.jpg */,
@@ -520,6 +523,7 @@
 				48FDBD2318C6FF9F0026A51E /* shoes.jpg in Resources */,
 				4837C5EF18A6B3DC0022CFDD /* weather-mist.png in Resources */,
 				4837C5FD18A6B3DC0022CFDD /* weather-tstorm.png in Resources */,
+				6087B0C818C7C886001BFD58 /* placeholder.png in Resources */,
 				4837C65018A76DFA0022CFDD /* austin-2.png in Resources */,
 				4837C5FE18A6B3DC0022CFDD /* weather-tstorm@2x.png in Resources */,
 				4837C59C18A6AA140022CFDD /* InfoPlist.strings in Resources */,

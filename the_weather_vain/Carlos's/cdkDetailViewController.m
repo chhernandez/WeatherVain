@@ -43,7 +43,8 @@
         
        
         
-        self.itemImage.image = [UIImage imageNamed:@"placeholder.png"];
+        //  need to find a nice placeholder image. chh 03052014
+        // self.itemImage.image = [UIImage imageNamed:@"placeholder.png"];
         self.itemImage.file = [self.detailItem objectForKey:@"Image"];
         
         [self.itemImage loadInBackground];

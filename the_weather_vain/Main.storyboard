@@ -62,7 +62,6 @@
         <!--Cdk Main View Controller - Second-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
                 <viewController title="Second" id="QUy-BD-bpt" customClass="cdkMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SpL-qC-NIt"/>
@@ -108,6 +107,7 @@
                         <outlet property="welcomeLabel" destination="3Zi-rW-C8C" id="Oun-FH-W7Y"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1664" y="-624"/>
         </scene>
@@ -298,7 +298,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="aTL-4f-uuC" kind="push" id="zn5-UB-Qq8"/>
+                                    <segue destination="aTL-4f-uuC" kind="push" identifier="showDetail" id="zn5-UB-Qq8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
