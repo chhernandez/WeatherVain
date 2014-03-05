@@ -13,7 +13,7 @@
 
 //2
 //weather data properties
-@property (nonatomic, strong) NSData *date;
+@property (nonatomic, strong) NSDate *date;
 @property (nonatomic, strong) NSNumber *humidity;
 @property (nonatomic, strong) NSNumber *temperature;
 @property (nonatomic, strong) NSNumber * tempHigh;

@@ -50,13 +50,35 @@
 		4837C5FC18A6B3DC0022CFDD /* weather-snow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4837C5E118A6B3DC0022CFDD /* weather-snow@2x.png */; };
 		4837C5FD18A6B3DC0022CFDD /* weather-tstorm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4837C5E218A6B3DC0022CFDD /* weather-tstorm.png */; };
 		4837C5FE18A6B3DC0022CFDD /* weather-tstorm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4837C5E318A6B3DC0022CFDD /* weather-tstorm@2x.png */; };
-		4837C60E18A6CEC90022CFDD /* WXClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4837C60918A6CEC90022CFDD /* WXClient.m */; };
-		4837C60F18A6CEC90022CFDD /* WXCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4837C60B18A6CEC90022CFDD /* WXCondition.m */; };
-		4837C61018A6CEC90022CFDD /* WXDailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4837C60D18A6CEC90022CFDD /* WXDailyForecast.m */; };
 		4837C61318A7622D0022CFDD /* WXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4837C61218A7622D0022CFDD /* WXManager.m */; };
 		4837C61518A764E60022CFDD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4837C61418A764E60022CFDD /* CoreLocation.framework */; };
 		4837C65018A76DFA0022CFDD /* austin-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4837C64F18A76DFA0022CFDD /* austin-2.png */; };
-		4837C65318A772090022CFDD /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4837C65218A772090022CFDD /* Storyboard.storyboard */; };
+		483DC19E18C451F500CD72DF /* WXWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 483DC19D18C451F500CD72DF /* WXWeatherViewController.m */; };
+		483DC1A118C4643700CD72DF /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 483DC1A018C4643700CD72DF /* MainPageViewController.m */; };
+		483DC1A318C46BAF00CD72DF /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483DC1A218C46BAF00CD72DF /* MainPageViewController.xib */; };
+		48AF1E1418C6F682009F07E3 /* WXClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AF1E0D18C6F682009F07E3 /* WXClient.m */; };
+		48AF1E1518C6F682009F07E3 /* WXCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AF1E0F18C6F682009F07E3 /* WXCondition.m */; };
+		48AF1E1618C6F682009F07E3 /* WXDailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AF1E1118C6F682009F07E3 /* WXDailyForecast.m */; };
+		48FDBCF818C6FF1B0026A51E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FDBCF718C6FF1B0026A51E /* Main.storyboard */; };
+		48FDBD1918C6FF9F0026A51E /* accessories.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48FDBCFB18C6FF9F0026A51E /* accessories.jpg */; };
+		48FDBD1A18C6FF9F0026A51E /* bottoms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48FDBCFC18C6FF9F0026A51E /* bottoms.jpg */; };
+		48FDBD1B18C6FF9F0026A51E /* cdkCellType.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FDBCFE18C6FF9F0026A51E /* cdkCellType.m */; };
+		48FDBD1C18C6FF9F0026A51E /* cdkClosetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FDBD0018C6FF9F0026A51E /* cdkClosetViewController.m */; };
+		48FDBD1D18C6FF9F0026A51E /* cdkDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FDBD0218C6FF9F0026A51E /* cdkDetailViewController.m */; };
+		48FDBD1E18C6FF9F0026A51E /* cdkMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FDBD0418C6FF9F0026A51E /* cdkMainViewController.m */; };
+		48FDBD1F18C6FF9F0026A51E /* cdkMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FDBD0618C6FF9F0026A51E /* cdkMasterViewController.m */; };
+		48FDBD2018C6FF9F0026A51E /* cdkWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FDBD0818C6FF9F0026A51E /* cdkWeatherViewController.m */; };
+		48FDBD2118C6FF9F0026A51E /* dress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48FDBD0918C6FF9F0026A51E /* dress.jpg */; };
+		48FDBD2218C6FF9F0026A51E /* outerwear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48FDBD0A18C6FF9F0026A51E /* outerwear.jpg */; };
+		48FDBD2318C6FF9F0026A51E /* shoes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48FDBD0B18C6FF9F0026A51E /* shoes.jpg */; };
+		48FDBD2518C6FF9F0026A51E /* tops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48FDBD0E18C6FF9F0026A51E /* tops.jpg */; };
+		48FDBD2618C6FF9F0026A51E /* ViewController_Closet.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FDBD1018C6FF9F0026A51E /* ViewController_Closet.m */; };
+		48FDBD2718C6FF9F0026A51E /* ViewController_Outfit.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FDBD1218C6FF9F0026A51E /* ViewController_Outfit.m */; };
+		48FDBD2818C6FF9F0026A51E /* ViewController_Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FDBD1418C6FF9F0026A51E /* ViewController_Profile.m */; };
+		48FDBD2918C6FF9F0026A51E /* ViewController_Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FDBD1618C6FF9F0026A51E /* ViewController_Social.m */; };
+		48FDBD2A18C6FF9F0026A51E /* ViewController_Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FDBD1818C6FF9F0026A51E /* ViewController_Weather.m */; };
+		48FDBD2E18C702080026A51E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FDBD2D18C702080026A51E /* Images.xcassets */; };
+		48FDBD3018C705780026A51E /* outfit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48FDBD2F18C705780026A51E /* outfit.jpg */; };
 		CA75DD1518BD247F00DE87CE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75DD0D18BD247F00DE87CE /* AudioToolbox.framework */; };
 		CA75DD1618BD247F00DE87CE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75DD0E18BD247F00DE87CE /* CFNetwork.framework */; };
 		CA75DD1718BD247F00DE87CE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75DD0F18BD247F00DE87CE /* libz.dylib */; };
@@ -126,18 +148,53 @@
 		4837C5E118A6B3DC0022CFDD /* weather-snow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weather-snow@2x.png"; sourceTree = "<group>"; };
 		4837C5E218A6B3DC0022CFDD /* weather-tstorm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weather-tstorm.png"; sourceTree = "<group>"; };
 		4837C5E318A6B3DC0022CFDD /* weather-tstorm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weather-tstorm@2x.png"; sourceTree = "<group>"; };
-		4837C60818A6CEC90022CFDD /* WXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXClient.h; path = Pods/WXClient.h; sourceTree = "<group>"; };
-		4837C60918A6CEC90022CFDD /* WXClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXClient.m; path = Pods/WXClient.m; sourceTree = "<group>"; };
-		4837C60A18A6CEC90022CFDD /* WXCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXCondition.h; path = Pods/WXCondition.h; sourceTree = "<group>"; };
-		4837C60B18A6CEC90022CFDD /* WXCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXCondition.m; path = Pods/WXCondition.m; sourceTree = "<group>"; };
-		4837C60C18A6CEC90022CFDD /* WXDailyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXDailyForecast.h; path = Pods/WXDailyForecast.h; sourceTree = "<group>"; };
-		4837C60D18A6CEC90022CFDD /* WXDailyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXDailyForecast.m; path = Pods/WXDailyForecast.m; sourceTree = "<group>"; };
 		4837C61118A7622D0022CFDD /* WXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXManager.h; sourceTree = "<group>"; };
 		4837C61218A7622D0022CFDD /* WXManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXManager.m; sourceTree = "<group>"; };
 		4837C61418A764E60022CFDD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4837C61618A76BD00022CFDD /* Austin.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Austin.gpx; sourceTree = "<group>"; };
 		4837C64F18A76DFA0022CFDD /* austin-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "austin-2.png"; sourceTree = "<group>"; };
-		4837C65218A772090022CFDD /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		483DC19C18C451F500CD72DF /* WXWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXWeatherViewController.h; path = ViewControllers/WXWeatherViewController.h; sourceTree = "<group>"; };
+		483DC19D18C451F500CD72DF /* WXWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXWeatherViewController.m; path = ViewControllers/WXWeatherViewController.m; sourceTree = "<group>"; };
+		483DC19F18C4643700CD72DF /* MainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainPageViewController.h; path = ViewControllers/MainPageViewController.h; sourceTree = "<group>"; };
+		483DC1A018C4643700CD72DF /* MainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainPageViewController.m; path = ViewControllers/MainPageViewController.m; sourceTree = "<group>"; };
+		483DC1A218C46BAF00CD72DF /* MainPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
+		48AF1E0C18C6F682009F07E3 /* WXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXClient.h; sourceTree = "<group>"; };
+		48AF1E0D18C6F682009F07E3 /* WXClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXClient.m; sourceTree = "<group>"; };
+		48AF1E0E18C6F682009F07E3 /* WXCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCondition.h; sourceTree = "<group>"; };
+		48AF1E0F18C6F682009F07E3 /* WXCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCondition.m; sourceTree = "<group>"; };
+		48AF1E1018C6F682009F07E3 /* WXDailyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDailyForecast.h; sourceTree = "<group>"; };
+		48AF1E1118C6F682009F07E3 /* WXDailyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDailyForecast.m; sourceTree = "<group>"; };
+		48FDBCF718C6FF1B0026A51E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		48FDBCFB18C6FF9F0026A51E /* accessories.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = accessories.jpg; sourceTree = "<group>"; };
+		48FDBCFC18C6FF9F0026A51E /* bottoms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bottoms.jpg; sourceTree = "<group>"; };
+		48FDBCFD18C6FF9F0026A51E /* cdkCellType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkCellType.h; sourceTree = "<group>"; };
+		48FDBCFE18C6FF9F0026A51E /* cdkCellType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkCellType.m; sourceTree = "<group>"; };
+		48FDBCFF18C6FF9F0026A51E /* cdkClosetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkClosetViewController.h; sourceTree = "<group>"; };
+		48FDBD0018C6FF9F0026A51E /* cdkClosetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkClosetViewController.m; sourceTree = "<group>"; };
+		48FDBD0118C6FF9F0026A51E /* cdkDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkDetailViewController.h; sourceTree = "<group>"; };
+		48FDBD0218C6FF9F0026A51E /* cdkDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkDetailViewController.m; sourceTree = "<group>"; };
+		48FDBD0318C6FF9F0026A51E /* cdkMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkMainViewController.h; sourceTree = "<group>"; };
+		48FDBD0418C6FF9F0026A51E /* cdkMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkMainViewController.m; sourceTree = "<group>"; };
+		48FDBD0518C6FF9F0026A51E /* cdkMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkMasterViewController.h; sourceTree = "<group>"; };
+		48FDBD0618C6FF9F0026A51E /* cdkMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkMasterViewController.m; sourceTree = "<group>"; };
+		48FDBD0718C6FF9F0026A51E /* cdkWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkWeatherViewController.h; sourceTree = "<group>"; };
+		48FDBD0818C6FF9F0026A51E /* cdkWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkWeatherViewController.m; sourceTree = "<group>"; };
+		48FDBD0918C6FF9F0026A51E /* dress.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dress.jpg; sourceTree = "<group>"; };
+		48FDBD0A18C6FF9F0026A51E /* outerwear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outerwear.jpg; sourceTree = "<group>"; };
+		48FDBD0B18C6FF9F0026A51E /* shoes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shoes.jpg; sourceTree = "<group>"; };
+		48FDBD0E18C6FF9F0026A51E /* tops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tops.jpg; sourceTree = "<group>"; };
+		48FDBD0F18C6FF9F0026A51E /* ViewController_Closet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController_Closet.h; sourceTree = "<group>"; };
+		48FDBD1018C6FF9F0026A51E /* ViewController_Closet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController_Closet.m; sourceTree = "<group>"; };
+		48FDBD1118C6FF9F0026A51E /* ViewController_Outfit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController_Outfit.h; sourceTree = "<group>"; };
+		48FDBD1218C6FF9F0026A51E /* ViewController_Outfit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController_Outfit.m; sourceTree = "<group>"; };
+		48FDBD1318C6FF9F0026A51E /* ViewController_Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController_Profile.h; sourceTree = "<group>"; };
+		48FDBD1418C6FF9F0026A51E /* ViewController_Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController_Profile.m; sourceTree = "<group>"; };
+		48FDBD1518C6FF9F0026A51E /* ViewController_Social.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController_Social.h; sourceTree = "<group>"; };
+		48FDBD1618C6FF9F0026A51E /* ViewController_Social.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController_Social.m; sourceTree = "<group>"; };
+		48FDBD1718C6FF9F0026A51E /* ViewController_Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController_Weather.h; sourceTree = "<group>"; };
+		48FDBD1818C6FF9F0026A51E /* ViewController_Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController_Weather.m; sourceTree = "<group>"; };
+		48FDBD2D18C702080026A51E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		48FDBD2F18C705780026A51E /* outfit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outfit.jpg; sourceTree = "<group>"; };
 		CA75DD0D18BD247F00DE87CE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CA75DD0E18BD247F00DE87CE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CA75DD0F18BD247F00DE87CE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -189,18 +246,19 @@
 		4837C58318A6AA130022CFDD = {
 			isa = PBXGroup;
 			children = (
-				4837C65218A772090022CFDD /* Storyboard.storyboard */,
+				48FDBCFA18C6FF9F0026A51E /* Carlos's */,
+				48FDBCF718C6FF1B0026A51E /* Main.storyboard */,
+				48AF1E0B18C6F682009F07E3 /* WX */,
+				483DC1A218C46BAF00CD72DF /* MainPageViewController.xib */,
+				483DC19F18C4643700CD72DF /* MainPageViewController.h */,
+				483DC1A018C4643700CD72DF /* MainPageViewController.m */,
+				483DC19C18C451F500CD72DF /* WXWeatherViewController.h */,
+				483DC19D18C451F500CD72DF /* WXWeatherViewController.m */,
 				4837C61618A76BD00022CFDD /* Austin.gpx */,
 				4837C61118A7622D0022CFDD /* WXManager.h */,
 				4837C61218A7622D0022CFDD /* WXManager.m */,
 				4837C5C418A6ACAC0022CFDD /* WXController.h */,
 				4837C5C518A6ACAC0022CFDD /* WXController.m */,
-				4837C60818A6CEC90022CFDD /* WXClient.h */,
-				4837C60918A6CEC90022CFDD /* WXClient.m */,
-				4837C60A18A6CEC90022CFDD /* WXCondition.h */,
-				4837C60B18A6CEC90022CFDD /* WXCondition.m */,
-				4837C60C18A6CEC90022CFDD /* WXDailyForecast.h */,
-				4837C60D18A6CEC90022CFDD /* WXDailyForecast.m */,
 				4837C5C718A6B3DC0022CFDD /* Images */,
 				4837C59718A6AA140022CFDD /* WeatherVain */,
 				4837C5B418A6AA140022CFDD /* WeatherVainTests */,
@@ -285,6 +343,7 @@
 		4837C5C718A6B3DC0022CFDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				48FDBD2F18C705780026A51E /* outfit.jpg */,
 				4837C64F18A76DFA0022CFDD /* austin-2.png */,
 				4837C5C818A6B3DC0022CFDD /* austin.png */,
 				4837C5C918A6B3DC0022CFDD /* bg.png */,
@@ -323,6 +382,55 @@
 				4837C5E318A6B3DC0022CFDD /* weather-tstorm@2x.png */,
 			);
 			path = "Weather Icons";
+			sourceTree = "<group>";
+		};
+		48AF1E0B18C6F682009F07E3 /* WX */ = {
+			isa = PBXGroup;
+			children = (
+				48AF1E0C18C6F682009F07E3 /* WXClient.h */,
+				48AF1E0D18C6F682009F07E3 /* WXClient.m */,
+				48AF1E0E18C6F682009F07E3 /* WXCondition.h */,
+				48AF1E0F18C6F682009F07E3 /* WXCondition.m */,
+				48AF1E1018C6F682009F07E3 /* WXDailyForecast.h */,
+				48AF1E1118C6F682009F07E3 /* WXDailyForecast.m */,
+			);
+			path = WX;
+			sourceTree = "<group>";
+		};
+		48FDBCFA18C6FF9F0026A51E /* Carlos's */ = {
+			isa = PBXGroup;
+			children = (
+				48FDBD2D18C702080026A51E /* Images.xcassets */,
+				48FDBCFB18C6FF9F0026A51E /* accessories.jpg */,
+				48FDBCFC18C6FF9F0026A51E /* bottoms.jpg */,
+				48FDBCFD18C6FF9F0026A51E /* cdkCellType.h */,
+				48FDBCFE18C6FF9F0026A51E /* cdkCellType.m */,
+				48FDBCFF18C6FF9F0026A51E /* cdkClosetViewController.h */,
+				48FDBD0018C6FF9F0026A51E /* cdkClosetViewController.m */,
+				48FDBD0118C6FF9F0026A51E /* cdkDetailViewController.h */,
+				48FDBD0218C6FF9F0026A51E /* cdkDetailViewController.m */,
+				48FDBD0318C6FF9F0026A51E /* cdkMainViewController.h */,
+				48FDBD0418C6FF9F0026A51E /* cdkMainViewController.m */,
+				48FDBD0518C6FF9F0026A51E /* cdkMasterViewController.h */,
+				48FDBD0618C6FF9F0026A51E /* cdkMasterViewController.m */,
+				48FDBD0718C6FF9F0026A51E /* cdkWeatherViewController.h */,
+				48FDBD0818C6FF9F0026A51E /* cdkWeatherViewController.m */,
+				48FDBD0918C6FF9F0026A51E /* dress.jpg */,
+				48FDBD0A18C6FF9F0026A51E /* outerwear.jpg */,
+				48FDBD0B18C6FF9F0026A51E /* shoes.jpg */,
+				48FDBD0E18C6FF9F0026A51E /* tops.jpg */,
+				48FDBD0F18C6FF9F0026A51E /* ViewController_Closet.h */,
+				48FDBD1018C6FF9F0026A51E /* ViewController_Closet.m */,
+				48FDBD1118C6FF9F0026A51E /* ViewController_Outfit.h */,
+				48FDBD1218C6FF9F0026A51E /* ViewController_Outfit.m */,
+				48FDBD1318C6FF9F0026A51E /* ViewController_Profile.h */,
+				48FDBD1418C6FF9F0026A51E /* ViewController_Profile.m */,
+				48FDBD1518C6FF9F0026A51E /* ViewController_Social.h */,
+				48FDBD1618C6FF9F0026A51E /* ViewController_Social.m */,
+				48FDBD1718C6FF9F0026A51E /* ViewController_Weather.h */,
+				48FDBD1818C6FF9F0026A51E /* ViewController_Weather.m */,
+			);
+			path = "Carlos's";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,15 +513,19 @@
 				4837C5E918A6B3DC0022CFDD /* weather-clear.png in Resources */,
 				4837C5ED18A6B3DC0022CFDD /* weather-few.png in Resources */,
 				4837C5F518A6B3DC0022CFDD /* weather-rain.png in Resources */,
+				48FDBD2E18C702080026A51E /* Images.xcassets in Resources */,
 				4837C5E418A6B3DC0022CFDD /* austin.png in Resources */,
 				4837C5EE18A6B3DC0022CFDD /* weather-few@2x.png in Resources */,
 				4837C5E818A6B3DC0022CFDD /* weather-broken@2x.png in Resources */,
+				48FDBD2318C6FF9F0026A51E /* shoes.jpg in Resources */,
 				4837C5EF18A6B3DC0022CFDD /* weather-mist.png in Resources */,
 				4837C5FD18A6B3DC0022CFDD /* weather-tstorm.png in Resources */,
 				4837C65018A76DFA0022CFDD /* austin-2.png in Resources */,
 				4837C5FE18A6B3DC0022CFDD /* weather-tstorm@2x.png in Resources */,
 				4837C59C18A6AA140022CFDD /* InfoPlist.strings in Resources */,
 				4837C5E518A6B3DC0022CFDD /* bg.png in Resources */,
+				483DC1A318C46BAF00CD72DF /* MainPageViewController.xib in Resources */,
+				48FDBD2218C6FF9F0026A51E /* outerwear.jpg in Resources */,
 				4837C5F218A6B3DC0022CFDD /* weather-moon@2x.png in Resources */,
 				4837C5F918A6B3DC0022CFDD /* weather-shower.png in Resources */,
 				4837C5FB18A6B3DC0022CFDD /* weather-snow.png in Resources */,
@@ -423,12 +535,17 @@
 				4837C5EC18A6B3DC0022CFDD /* weather-few-night@2x.png in Resources */,
 				4837C5F818A6B3DC0022CFDD /* weather-scattered@2x.png in Resources */,
 				4837C5EB18A6B3DC0022CFDD /* weather-few-night.png in Resources */,
+				48FDBD1A18C6FF9F0026A51E /* bottoms.jpg in Resources */,
+				48FDBD2518C6FF9F0026A51E /* tops.jpg in Resources */,
 				4837C5A718A6AA140022CFDD /* Images.xcassets in Resources */,
+				48FDBD3018C705780026A51E /* outfit.jpg in Resources */,
 				4837C5EA18A6B3DC0022CFDD /* weather-clear@2x.png in Resources */,
+				48FDBD2118C6FF9F0026A51E /* dress.jpg in Resources */,
 				4837C5F018A6B3DC0022CFDD /* weather-mist@2x.png in Resources */,
 				4837C5E618A6B3DC0022CFDD /* bg@2x.png in Resources */,
+				48FDBD1918C6FF9F0026A51E /* accessories.jpg in Resources */,
 				4837C5FA18A6B3DC0022CFDD /* weather-shower@2x.png in Resources */,
-				4837C65318A772090022CFDD /* Storyboard.storyboard in Resources */,
+				48FDBCF818C6FF1B0026A51E /* Main.storyboard in Resources */,
 				4837C5F718A6B3DC0022CFDD /* weather-scattered.png in Resources */,
 				4837C5F618A6B3DC0022CFDD /* weather-rain@2x.png in Resources */,
 				4837C5F318A6B3DC0022CFDD /* weather-rain-night.png in Resources */,
@@ -484,12 +601,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48FDBD2618C6FF9F0026A51E /* ViewController_Closet.m in Sources */,
+				483DC1A118C4643700CD72DF /* MainPageViewController.m in Sources */,
+				48FDBD2818C6FF9F0026A51E /* ViewController_Profile.m in Sources */,
+				48AF1E1518C6F682009F07E3 /* WXCondition.m in Sources */,
+				48FDBD1D18C6FF9F0026A51E /* cdkDetailViewController.m in Sources */,
+				483DC19E18C451F500CD72DF /* WXWeatherViewController.m in Sources */,
+				48FDBD2A18C6FF9F0026A51E /* ViewController_Weather.m in Sources */,
+				48AF1E1618C6F682009F07E3 /* WXDailyForecast.m in Sources */,
 				4837C61318A7622D0022CFDD /* WXManager.m in Sources */,
-				4837C60F18A6CEC90022CFDD /* WXCondition.m in Sources */,
-				4837C61018A6CEC90022CFDD /* WXDailyForecast.m in Sources */,
+				48FDBD2018C6FF9F0026A51E /* cdkWeatherViewController.m in Sources */,
+				48AF1E1418C6F682009F07E3 /* WXClient.m in Sources */,
+				48FDBD1B18C6FF9F0026A51E /* cdkCellType.m in Sources */,
+				48FDBD1E18C6FF9F0026A51E /* cdkMainViewController.m in Sources */,
+				48FDBD1C18C6FF9F0026A51E /* cdkClosetViewController.m in Sources */,
+				48FDBD1F18C6FF9F0026A51E /* cdkMasterViewController.m in Sources */,
+				48FDBD2718C6FF9F0026A51E /* ViewController_Outfit.m in Sources */,
 				4837C5A218A6AA140022CFDD /* AppDelegate.m in Sources */,
 				4837C5C618A6ACAC0022CFDD /* WXController.m in Sources */,
-				4837C60E18A6CEC90022CFDD /* WXClient.m in Sources */,
+				48FDBD2918C6FF9F0026A51E /* ViewController_Social.m in Sources */,
 				4837C5A518A6AA140022CFDD /* WeatherVain.xcdatamodeld in Sources */,
 				4837C59E18A6AA140022CFDD /* main.m in Sources */,
 			);
@@ -619,6 +749,19 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeatherVain/WeatherVain-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK\"",
+					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK\"",
+					"\"${PODS_ROOT}/Headers/HexColors\"",
+					"\"${PODS_ROOT}/Headers/LBBlurredImage\"",
+					"\"${PODS_ROOT}/Headers/Mantle\"",
+					"\"${PODS_ROOT}/Headers/Parse\"",
+					"\"${PODS_ROOT}/Headers/ProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/TSMessages\"",
+				);
 				INFOPLIST_FILE = "WeatherVain/WeatherVain-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

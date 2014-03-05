@@ -10,5 +10,6 @@
 #import <Parse/Parse.h>
 
 @interface WXController : UIViewController
-<UITableViewDataSource , UITableViewDelegate, UIScrollViewDelegate>
+
+<UIScrollViewDelegate>
 @end

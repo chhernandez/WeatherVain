@@ -91,7 +91,8 @@
     return [[self fetchJSONFromURL:url] map:^(NSDictionary *json) {
         // 3
        /* Use MTLJSONAdapter to convert the JSON into an WXCondition object, using the MTLJSONSerializing protocol you created for WXCondition.*/
-        return [MTLJSONAdapter modelOfClass:[WXCondition class] fromJSONDictionary:json error:nil];
+        WXCondition *condition = [MTLJSONAdapter modelOfClass:[WXCondition class] fromJSONDictionary:json error:nil];
+        return condition;
         
         
     }];

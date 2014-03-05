@@ -10,6 +10,7 @@
 #import "WXController.h"
 #import <TSMessage.h>
 #import <Parse/Parse.h>
+#import "WXWeatherViewController.h"
 
 @implementation AppDelegate
 
@@ -25,16 +26,18 @@
     
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    UITabBarController *tabBar = (UITabBarController *)self.window.rootViewController;
+    tabBar.selectedIndex = 1;
     
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    //1
-    self.window.rootViewController = [[WXController alloc] init];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    //2
-    [TSMessage setDefaultViewController: self.window.rootViewController];
+//    
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    // Override point for customization after application launch.
+//    //1
+//    self.window.rootViewController = [WXController new];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
+//    //2
+//    [TSMessage setDefaultViewController: self.window.rootViewController];
     return YES;
 }
 

@@ -9,26 +9,21 @@
 #import "WXController.h"
 #import <LBBlurredImage/UIImageView+LBBlurredImage.h>
 #import "WXManager.h"
+#import "MainPageViewController.h"
 
 @interface WXController ()
 @property (nonatomic, strong) UIImageView *backgroundImageView;
 @property (nonatomic, strong) UIImageView *blurredImageView;
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) IBOutlet UIButton *fullScreenButton;
 @property (nonatomic, assign) CGFloat screenHeight;
-@property (nonatomic, strong) NSDateFormatter *hourlyFormatter;
-@property (nonatomic, strong) NSDateFormatter *dailyFormatter;
+
 @end
 
 @implementation WXController
 
 - (id)init {
     if (self = [super init]) {
-        _hourlyFormatter = [[NSDateFormatter alloc] init];
-        _hourlyFormatter.dateFormat = @"h a";
-        
-        _dailyFormatter = [[NSDateFormatter alloc] init];
-        _dailyFormatter.dateFormat = @"EEEE";
-    }
+           }
     return self;
 }
 
@@ -37,55 +32,62 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        _hourlyFormatter = [[NSDateFormatter alloc] init];
-        _hourlyFormatter.dateFormat = @"h a";
-        
-        _dailyFormatter = [[NSDateFormatter alloc] init];
-        _dailyFormatter.dateFormat = @"EEEE";
-
+//        _hourlyFormatter = [[NSDateFormatter alloc] init];
+//        _hourlyFormatter.dateFormat = @"h a";
+//        
+//        _dailyFormatter = [[NSDateFormatter alloc] init];
+//        _dailyFormatter.dateFormat = @"EEEE";
+//
     }
     return self;
+}
+
+-(void) pushToDetail:(id) sender{
+    MainPageViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"mainPageView"];
+    
+
+    [self presentViewController:viewController animated:YES completion:nil];
+
 }
 
 - (void)viewDidLoad
 {
     
     [super viewDidLoad];
+    
+    [self.navigationController navigationBar].hidden = YES;
+     
+    
     PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
     testObject[@"foo"] = @"bar";
     [testObject saveInBackground];
 	//  loading the view.
     
     //1
-    self.screenHeight = [UIScreen mainScreen].bounds.size.height;
+    self.screenHeight = [UIScreen mainScreen].bounds.size.height - self.tabBarController.view.frame.size.height;
     
-    UIImage *background = [UIImage imageNamed: @"austin-2"];
+    UIImage *background = [UIImage imageNamed: @"outfit.jpg"];
     
     //2
     self.backgroundImageView = [[UIImageView alloc] initWithImage:background];
+    CGRect frame = self.backgroundImageView.frame;
+    frame.size.height = frame.size.height - 50;
     self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:self.backgroundImageView];
     
     //3
-    self.blurredImageView = [[UIImageView alloc] init];
-    self.blurredImageView.contentMode = UIViewContentModeScaleAspectFill;
-    self.blurredImageView.alpha = 0;
-    [self.blurredImageView setImageToBlur:background blurRadius:10 completionBlock:nil];
-    [self.view addSubview:self.blurredImageView];
-    
-    //4
-    self.tableView = [[UITableView alloc] init];
-    self.tableView.backgroundColor = [UIColor clearColor];
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    self.tableView.separatorColor = [UIColor colorWithWhite:1 alpha:0.2];
-    self.tableView.pagingEnabled = YES;
-    [self.view addSubview:self.tableView];
-    
+//    self.blurredImageView = [[UIImageView alloc] init];
+//    self.blurredImageView.contentMode = UIViewContentModeScaleAspectFill;
+//    self.blurredImageView.alpha = 0;
+//    [self.blurredImageView setImageToBlur:background blurRadius:10 completionBlock:nil];
+//    [self.view addSubview:self.blurredImageView];
     
     //additional setting up the layout frames and margins
     //1
     CGRect headerFrame = [UIScreen mainScreen].bounds;
+    
+    headerFrame.size.height = headerFrame.size.height - 50;
+//    headerFrame.size.height = self.view.frame.size.height - self.tabBarController.view.frame.size.height;
     //2
     //an inset (or padding) variable so that all labels are evenly spaced and centered.
     CGFloat inset = 20;
@@ -112,8 +114,9 @@
     
     //1
     UIView *header = [[ UIView alloc] initWithFrame:headerFrame];
-    header.backgroundColor = [UIColor clearColor];
-    self.tableView.tableHeaderView = header;
+    header.backgroundColor = [UIColor blackColor];
+    header.alpha = 0.3;
+//    self.tableView.tableHeaderView = header;
     
     //2
     //bottom left
@@ -198,19 +201,23 @@
                             deliverOn:RACScheduler.mainThreadScheduler];
     
     [[WXManager sharedManager] findCurrentLocation];
-    [ProgressHUD show:@"Getting Weather data"];
+//    [ProgressHUD show:@"Getting Weather data"];
     [[RACObserve([WXManager sharedManager], hourlyForecast)
       deliverOn:RACScheduler.mainThreadScheduler]
      subscribeNext:^(NSArray *newForecast) {
-         [ProgressHUD showSuccess:@"Done"];
-         [self.tableView reloadData];
+//         [ProgressHUD showSuccess:@"Done"];
+//         [self.tableView reloadData];
      }];
     
     [[RACObserve([WXManager sharedManager], dailyForecast)
       deliverOn:RACScheduler.mainThreadScheduler]
      subscribeNext:^(NSArray *newForecast) {
-         [self.tableView reloadData];
-     }];    
+//         [self.tableView reloadData];
+     }];
+    
+    [self.view addSubview:header];
+    [self.view addSubview:self.fullScreenButton];
+    
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
@@ -223,110 +230,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-//1
-#pragma mask - UITableViewDatasource
-//2
--(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
-    return 2;
-}
-
-- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{ // 1
-    /*The first section is for the hourly forecast. Use the six latest hourly forecasts and add one more cell for the header.*/
-    if (section == 0) {
-        return MIN([[WXManager sharedManager].hourlyForecast count], 6) + 1;
-    }
-    // 2
-    /*The next section is for daily forecasts. Use the six latest daily forecasts and add one more cell for the header.*/
-    return MIN([[WXManager sharedManager].dailyForecast count], 6) + 1;
-
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"CellIdentifier";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
-    }
-    
-    //3
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.backgroundColor = [UIColor colorWithWhite:0 alpha:0.2];
-    cell.textLabel.textColor = [UIColor whiteColor];
-    cell.detailTextLabel.textColor = [UIColor whiteColor];
-    
-    //TODO: setup teh cell
-    if (indexPath.section == 0) {
-        // 1
-        if (indexPath.row == 0) {
-            [self configureHeaderCell:cell title:@"6 - Hourly Forecast"];
-        }
-        else {
-            // 2
-            WXCondition *weather = [WXManager sharedManager].hourlyForecast[indexPath.row - 1];
-            [self configureHourlyCell:cell weather:weather];
-        }
-    }
-    else if (indexPath.section == 1) {
-        // 1
-        if (indexPath.row == 0) {
-            [self configureHeaderCell:cell title:@"Daily Forecast"];
-        }
-        else {
-            // 3
-            WXCondition *weather = [WXManager sharedManager].dailyForecast[indexPath.row - 1];
-            [self configureDailyCell:cell weather:weather];
-        }
-    }    return cell;
-}
-
-#pragma mark = UITableViewDelegate
-
-- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSInteger cellCount = [self tableView:tableView numberOfRowsInSection:indexPath.section];
-    return self.screenHeight / (CGFloat)cellCount;
-}
 
 -(void) viewWillLayoutSubviews{
     [super viewDidLayoutSubviews];
     
     CGRect bounds = self.view.bounds;
+    bounds.size.height = bounds.size.height - 50;
     self.backgroundImageView.frame = bounds;
-    self.blurredImageView.frame = bounds;
-    self.tableView.frame = bounds;
-}
-// 1
-- (void)configureHeaderCell:(UITableViewCell *)cell title:(NSString *)title {
-    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:18];
-    cell.textLabel.text = title;
-    cell.detailTextLabel.text = @"";
-    cell.imageView.image = nil;
-}
-
-// 2
-- (void)configureHourlyCell:(UITableViewCell *)cell weather:(WXCondition *)weather {
-    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18];
-    cell.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:18];
-    cell.textLabel.text = [self.hourlyFormatter stringFromDate:weather.date];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%.0f°",weather.temperature.floatValue];
-    cell.imageView.image = [UIImage imageNamed:[weather imageName]];
-    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
-}
-
-// 3
-- (void)configureDailyCell:(UITableViewCell *)cell weather:(WXCondition *)weather {
-    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18];
-    cell.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:18];
-    cell.textLabel.text = [self.dailyFormatter stringFromDate:weather.date];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%.0f° / %.0f°",
-                                 weather.tempHigh.floatValue,
-                                 weather.tempLow.floatValue];
-    cell.imageView.image = [UIImage imageNamed:[weather imageName]];
-    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
+//    self.blurredImageView.frame = bounds;
+//    self.fullScreenButton.frame = bounds;
 }
 
 

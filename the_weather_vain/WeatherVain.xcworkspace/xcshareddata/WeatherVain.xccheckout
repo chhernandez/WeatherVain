@@ -10,6 +10,8 @@
 	<string>WeatherVain</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>0E2F402F-DE2C-4170-8D83-B9CBDEF62DFB</key>
+		<string>https://github.com/jungeunyoon/WeatherVain.git</string>
 		<key>2ECC428C-A4DB-4950-AC71-2082F96CB225</key>
 		<string>https://github.com/tfsyed/WeatherVain.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>WeatherVain.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>0E2F402F-DE2C-4170-8D83-B9CBDEF62DFB</key>
+		<string>../../../../../WeatherVain</string>
 		<key>2ECC428C-A4DB-4950-AC71-2082F96CB225</key>
 		<string>..</string>
 	</dict>
@@ -33,6 +37,14 @@
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>2ECC428C-A4DB-4950-AC71-2082F96CB225</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WeatherVain</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0E2F402F-DE2C-4170-8D83-B9CBDEF62DFB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>WeatherVain</string>
 		</dict>
