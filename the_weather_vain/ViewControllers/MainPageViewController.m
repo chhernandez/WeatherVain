@@ -32,7 +32,7 @@
         [self.segmentControl setSelectedSegmentIndex:0];
         return nil;
     } else {
-            [self.segmentControl setSelectedSegmentIndex:currentIndex];
+        [self.segmentControl setSelectedSegmentIndex:currentIndex];
     }
     WXWeatherViewController *weatherViewController = [[WXWeatherViewController alloc] init];
     weatherViewController.label = [self.modelArray objectAtIndex:currentIndex - 1];
@@ -101,7 +101,7 @@
 {
     [super viewDidLoad];
     
-    UIImage *background = [UIImage imageNamed: @"austin-2"];
+    UIImage *background = [UIImage imageNamed: @"outfit-1_Fotor"];
     
     //3
     self.blurredImageView = [[UIImageView alloc] init];

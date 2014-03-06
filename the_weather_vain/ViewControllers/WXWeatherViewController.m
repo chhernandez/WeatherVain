@@ -48,14 +48,14 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self.navigationController navigationBar].hidden = NO;
-
-    self.backButton = [[UIButton alloc] initWithFrame:CGRectMake(220, 20, 100, 44)];
-    [self.backButton setTitle:@"Cancel" forState:UIControlStateNormal];
-    [self.backButton setTitleColor:[UIColor lightTextColor] forState:UIControlStateNormal];
-    [self.backButton addTarget:self action:@selector(goBack:) forControlEvents:UIControlEventTouchUpInside];
+    
+    //self.backButton = [[UIButton alloc] initWithFrame:CGRectMake(220, 20, 100, 44)];
+    //[self.backButton setTitle:@"Cancel" forState:UIControlStateNormal];
+    //[self.backButton setTitleColor:[UIColor lightTextColor] forState:UIControlStateNormal];
+    //[self.backButton addTarget:self action:@selector(goBack:) forControlEvents:UIControlEventTouchUpInside];
 
     //1
-    self.screenHeight = [UIScreen mainScreen].bounds.size.height;
+    self.screenHeight = [UIScreen mainScreen].bounds.size.height - 50;
        
     
     //4
@@ -205,7 +205,7 @@
 
     CGRect bounds = self.view.bounds;
 
-    self.tableView.frame = bounds;
+    self.tableView.frame = bounds ;
 }
 
 

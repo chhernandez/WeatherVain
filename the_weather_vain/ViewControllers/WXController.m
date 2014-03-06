@@ -66,7 +66,7 @@
     //1
     self.screenHeight = [UIScreen mainScreen].bounds.size.height - self.tabBarController.view.frame.size.height;
     
-    UIImage *background = [UIImage imageNamed: @"outfit.jpg"];
+    UIImage *background = [UIImage imageNamed: @"outfit-1_Fotor"];
     
     //2
     self.backgroundImageView = [[UIImageView alloc] initWithImage:background];
@@ -90,16 +90,14 @@
 //    headerFrame.size.height = self.view.frame.size.height - self.tabBarController.view.frame.size.height;
     //2
     //an inset (or padding) variable so that all labels are evenly spaced and centered.
-    CGFloat inset = 20;
+    CGFloat inset = 5;
     //3
-    CGFloat temperatureHeight = 110;
+    CGFloat temperatureHeight = 70;
     CGFloat hiloHeight = 40;
     CGFloat iconHeight = 30;
     
-    
     //4
-    CGRect hiloFrame = CGRectMake(inset, headerFrame.size.height - hiloHeight , headerFrame.size.width -(2 * inset), hiloHeight);
-    
+    CGRect hiloFrame = CGRectMake(inset, headerFrame.size.height - hiloHeight , headerFrame.size.width -(2*inset), hiloHeight);
     
     CGRect temperatureFrame = CGRectMake(inset, headerFrame.size.height - (temperatureHeight + hiloHeight), headerFrame.size.width - (2 *inset), temperatureHeight);
     
@@ -107,7 +105,7 @@
     
     //5
     CGRect conditionsFrame = iconFrame;
-    conditionsFrame.size.width = self.view.bounds.size.width - (((2 * inset) + iconHeight) + 10);
+    conditionsFrame.size.width = self.view.bounds.size.width - (((2 * inset) + iconHeight)+10);
     conditionsFrame.origin.x =  iconFrame.origin.x + (iconHeight + 10);
     
     //setting up various controls in our view
@@ -124,7 +122,7 @@
     temperatureLabel.backgroundColor = [UIColor clearColor];
     temperatureLabel.textColor = [UIColor whiteColor];
     temperatureLabel.text = @"0°";
-    temperatureLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:120];
+    temperatureLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:60];//120
     [header addSubview:temperatureLabel];
     
     
@@ -133,7 +131,7 @@
     hiloLabel.backgroundColor = [UIColor clearColor];
     hiloLabel.textColor = [UIColor whiteColor];
     hiloLabel.text = @"0° / 0°";
-    hiloLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:28];
+    hiloLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20];//28
     [header addSubview:hiloLabel];
     
     //Bottom

@@ -23,6 +23,8 @@
     if (self = [super init]) {
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
         _session = [NSURLSession sessionWithConfiguration:config];
+        
+        
     }
     return self;
 }
@@ -83,15 +85,16 @@
     // 1
     /*Format the URL from a CLLocationCoordinate2D object using its latitude and longitude.
 */
-    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&units=imperial",coordinate.latitude, coordinate.longitude];
+    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&units=imperial&APPID=9742f7e9daccd05446b688480c6b0c7a",coordinate.latitude, coordinate.longitude];
     NSURL *url = [NSURL URLWithString:urlString];
     
     // 2
-    /*Use the method you just built to create the signal. Since the returned value is a signal, you can call other ReactiveCocoa methods on it. Here you map the returned value — an instance of NSDictionary — into a different value.*/
+    /*Use the method you just built t`o create the signal. Since the returned value is a signal, you can call other ReactiveCocoa methods on it. Here you map the returned value — an instance of NSDictionary — into a different value.*/
     return [[self fetchJSONFromURL:url] map:^(NSDictionary *json) {
         // 3
        /* Use MTLJSONAdapter to convert the JSON into an WXCondition object, using the MTLJSONSerializing protocol you created for WXCondition.*/
-        WXCondition *condition = [MTLJSONAdapter modelOfClass:[WXCondition class] fromJSONDictionary:json error:nil];
+        NSError *error;
+        WXCondition *condition = [MTLJSONAdapter modelOfClass:[WXCondition class] fromJSONDictionary:json error:&error];
         return condition;
         
         
@@ -100,7 +103,7 @@
     
 }
 - (RACSignal *)fetchDailyForecastForLocation:(CLLocationCoordinate2D)coordinate {
-    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/forecast/daily?lat=%f&lon=%f&units=imperial&cnt=7",coordinate.latitude, coordinate.longitude];
+    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/forecast/daily?lat=%f&lon=%f&units=imperial&cnt=7&APPID=9742f7e9daccd05446b688480c6b0c7a",coordinate.latitude, coordinate.longitude];
     NSURL *url = [NSURL URLWithString:urlString];
     
     // Use the generic fetch method and map results to convert into an array of Mantle objects

@@ -11,6 +11,7 @@
 #import <TSMessage.h>
 #import <Parse/Parse.h>
 #import "WXWeatherViewController.h"
+#import "RKClient.h"
 
 @implementation AppDelegate
 
@@ -24,12 +25,37 @@
     [Parse setApplicationId:@"2u19gzNOrLZzNpjjGbxsrm0N7Zi2vc0GjmcjMz0F"
                   clientKey:@"MUw1snf6QWujtUYz6Ih0ndSo4RYZzSLn5GfNpd97"];
     
-    
+//    RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
+//        RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelTrace);
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     UITabBarController *tabBar = (UITabBarController *)self.window.rootViewController;
     tabBar.selectedIndex = 2;
+
     
+//    [[RKClient sharedInstance] getDailyForecastWithParameters:@{@"lat": @"37.785834",
+//                                                                @"lon":@"-122.406417",
+//                                                                @"units":@"imperial",
+//                                                                @"cnt":@"7",
+//                                                                @"APPID":@"9742f7e9daccd05446b688480c6b0c7a"}
+//                                                  withSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+//                                                      NSLog(@"MappingResult: %@", mappingResult);
+//                                                  } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+//                                                      NSLog(@"Error: %@", error);
+//                                                  }];
 //    
+//    [[RKClient sharedInstance] getHourlyForecastWithParameters:@{@"lat": @"37.785834",
+//                                                                @"lon":@"-122.406417",
+//                                                                @"units":@"imperial",
+//                                                                @"cnt":@"7",
+//                                                                @"APPID":@"9742f7e9daccd05446b688480c6b0c7a"}
+//                                                  withSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+//                                                      NSLog(@"MappingResult: %@", mappingResult);
+//                                                  } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+//                                                      NSLog(@"Error: %@", error);
+//                                                  }];
+//    
+    
+//
 //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    // Override point for customization after application launch.
 //    //1
