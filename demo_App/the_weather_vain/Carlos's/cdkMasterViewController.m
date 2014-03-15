@@ -108,9 +108,123 @@
         PFQuery *defaultquery = [PFQuery queryWithClassName:@"DefaultCloset"];
         [defaultquery findObjectsInBackgroundWithBlock:^(NSArray *defaultobjects, NSError *error) {
             
-              NSLog(@"count of default closet query: %lu", (unsigned long)defaultobjects.count);
-            
-            
+
+            if (!error) {
+                // The find succeeded.
+                NSLog(@"Successfully retrieved %d objects.", defaultobjects.count);
+                // Do something with the found objects
+                for (PFObject *object in defaultobjects) {
+                    NSLog(@"copying default object to custom object id %@", object.objectId);
+                  //  NSLog(@"my object in copy contains: %@", object);
+                    
+                    
+                    //  Next section is all about copying the default closet into the users closet one item at a time.  chh 03152014
+                    
+                    NSNumber *myBlack = [object objectForKey:@"Black"];
+                    
+                  //  NSLog(@"my black value in copy contains: %@", myBlack);
+                    
+                    NSNumber *myBlue = [object objectForKey:@"Blue"];
+                    NSNumber *myCloudy = [object objectForKey:@"Cloudy"];
+                    NSNumber *myCold = [object objectForKey:@"Cold"];
+                    NSString *myDescription = object[@"Description"];
+                    PFFile *myImage = [object objectForKey:@"Image"];
+                    
+                //    NSLog(@"my image value in copy contains: %@", myImage);
+                    
+                    NSNumber *myGender = [object objectForKey:@"Gender"];
+                    NSNumber *myGreen = [object objectForKey:@"Green"];
+                    NSNumber *myHot = [object objectForKey:@"Hot"];
+  
+                    
+                    NSString *myLabel = object[@"Label"];
+                    NSNumber *myMild = [object objectForKey:@"Mild"];
+                    NSNumber *myOrange = [object objectForKey:@"Orange"];
+                    NSNumber *myPurple = [object objectForKey:@"Purple"];
+                    NSNumber *myRainy = [object objectForKey:@"Rainy"];
+                    
+                    NSNumber *myRating = [object objectForKey:@"Rating"];
+                    NSNumber *myRed = [object objectForKey:@"Red"];
+                    NSNumber *myStatus = [object objectForKey:@"Status"];
+                    NSNumber *mySunny = [object objectForKey:@"Sunny"];
+                    
+                    NSNumber *myTempMax = [object objectForKey:@"TempMax"];
+                    NSNumber *myTempMin = [object objectForKey:@"TempMin"];
+                    NSNumber *myTypeID = [object objectForKey:@"TypeID"];
+
+                    
+                    NSNumber *myWhite = [object objectForKey:@"White"];
+                    NSNumber *myWindy = [object objectForKey:@"Windy"];
+                    NSNumber *myYellow = [object objectForKey:@"Yellow"];
+                    
+                 
+                 
+                    // self.itemImage.file = [self.detailItem objectForKey:@"Image"];
+                    
+                    PFUser *user = [PFUser currentUser];
+                    PFObject *newItem = [PFObject objectWithClassName:@"Closet"];
+                    
+                    newItem[@"User"] = user;
+                    
+                    //newItem[@"User"] = [PFUser currentUser];
+                    
+                   // PFRelation *myUser = [[PFUser currentUser] relationForKey:@"newItem"];
+                    
+                   // newItem[@"User"] = myUser;
+                    
+                    newItem[@"Black"] = myBlack;
+                    newItem[@"Blue"] = myBlue;
+                    newItem[@"Cloudy"] = myCloudy;
+                    newItem[@"Cold"] = myCold;
+                    newItem[@"Description"] = myDescription;
+                    newItem[@"Image"] = myImage;
+                    newItem[@"Gender"] = myGender;
+                    newItem[@"Green"] = myGreen;
+                    newItem[@"Hot"] = myHot;
+                    newItem[@"Label"] = myLabel;
+                    newItem[@"Mild"] = myMild;
+                    newItem[@"Orange"] = myOrange;
+                    newItem[@"Purple"] = myPurple;
+                    newItem[@"Rainy"] = myRainy;
+                    newItem[@"Rating"] = myRating;
+                    newItem[@"Red"] = myRed;
+                    newItem[@"Status"] = myStatus;
+                    newItem[@"Sunny"] = mySunny;
+                    newItem[@"TempMax"] = myTempMax;
+                    newItem[@"TempMin"] = myTempMin;
+                    newItem[@"TypeID"] = myTypeID;
+                    newItem[@"White"] = myWhite;
+                    newItem[@"Windy"] = myWindy;
+                    newItem[@"Yellow"] = myYellow;
+                    
+                    
+                    [newItem saveInBackground];
+                    
+                    
+                    
+                 //   newItem[@"Black"] = @[[object objectForKey:@"Black"] integerValue]];
+                 //   newItem[@"Blue"] = @[[object objectForKey:@"Blue"] integerValue]];
+                    
+                   // newItem[@"Blue"] = myBlue;
+                    
+                    
+                    
+                    
+                   // PFRelation *myUser = [[PFUser currentUser] relationForKey:@"newItem"];
+                   // NSLog(@"my user value in copy contains: %@", myUser);
+                    
+                    
+                    
+               //     newItem[@"Black"] =
+                    
+                    //
+                    
+                    
+                }
+            } else {
+                // Log details of the failure
+                NSLog(@"Error: %@ %@", error, [error userInfo]);
+            }
         }];
         
     }
