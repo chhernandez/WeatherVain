@@ -84,16 +84,35 @@
 // all objects ordered by createdAt descending.
 - (PFQuery *)queryForTable {
     PFQuery *query = [PFQuery queryWithClassName:@"Closet"];
+
+    [query whereKey:@"User" equalTo:[PFUser currentUser]];
     
+    NSLog(@"current user %@", [PFUser currentUser]);
+    
+    
+                                    
     // If Pull To Refresh is enabled, query against the network by default.
     if (self.pullToRefreshEnabled) {
         query.cachePolicy = kPFCachePolicyNetworkOnly;
     }
     
+    NSLog(@"count of closet by user query: %lu", (unsigned long)self.objects.count);
+    
     // If no objects are loaded in memory, we look to the cache first to fill the table
     // and then subsequently do a query against the network.
     if (self.objects.count == 0) {
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
+        
+        NSLog(@"query in cache: %u", query.cachePolicy);
+        
+        PFQuery *defaultquery = [PFQuery queryWithClassName:@"DefaultCloset"];
+        [defaultquery findObjectsInBackgroundWithBlock:^(NSArray *defaultobjects, NSError *error) {
+            
+              NSLog(@"count of default closet query: %lu", (unsigned long)defaultobjects.count);
+            
+            
+        }];
+        
     }
     
     
