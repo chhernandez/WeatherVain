@@ -59,7 +59,7 @@ SPEC CHECKSUMS:
   Mantle: abc3b0c81bc66eb624cf9cebb8640e377d5a44ae
   Parse: 6dd57f2af9f89dc6facc755cec4e96f8b739b1fb
   ProgressHUD: 9b41c9416b3ba4f9c5661afe9efa7938198ba810
-  ReactiveCocoa: 953a45dda30674fe704d1d9c77cc874141742f47
+  ReactiveCocoa: c3b0686ca2aa6589a6716000a7f6ff8e15d8de34
   RestKit: dc107a0aa4f962575ad0385bac5b3c5e4f591f4e
   RKValueTransformers: 1562d458b9c9d59ce777bfc5982f2e1aef2e9182
   SOCKit: 2f3bc4d07910de12dcc202815e07db68a3802581

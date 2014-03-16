@@ -96,15 +96,17 @@
         query.cachePolicy = kPFCachePolicyNetworkOnly;
     }
     
-    NSLog(@"count of closet by user query: %lu", (unsigned long)self.objects.count);
+ //   NSLog(@"count of closet by user query: %lu", (unsigned long)self.objects.count);
     
     // If no objects are loaded in memory, we look to the cache first to fill the table
     // and then subsequently do a query against the network.
     if (self.objects.count == 0) {
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
-        
+    }
+    
+    /*
         NSLog(@"query in cache: %u", query.cachePolicy);
-        
+   
         PFQuery *defaultquery = [PFQuery queryWithClassName:@"DefaultCloset"];
         [defaultquery findObjectsInBackgroundWithBlock:^(NSArray *defaultobjects, NSError *error) {
             
@@ -226,9 +228,11 @@
                 NSLog(@"Error: %@ %@", error, [error userInfo]);
             }
         }];
-        
-    }
     
+        
+    }  // end of   if (self.objects.count == 0) {
+    
+*/
     
     if (([self.TypeList  isEqual: @"Tops"])) {
           NSLog(@"my type list: %@", self.TypeList);
@@ -312,7 +316,7 @@
         cell = [[PFTableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-     NSLog(@"my object in master contains: %@", object);
+    // NSLog(@"my object in master contains: %@", object);
     
     // Configure the cell
     cell.textLabel.text = [object objectForKey:@"Label"];
@@ -376,7 +380,7 @@
         PFObject *object = [self.objects objectAtIndex:indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
         
-        NSLog(@"my object in prepareForSegue contains: %@", object);
+     //   NSLog(@"my object in prepareForSegue contains: %@", object);
     } else {
         
         NSLog(@"my object in prepareForSegue contains no objects");
